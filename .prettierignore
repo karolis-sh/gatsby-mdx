@@ -1,0 +1,11 @@
+*.*
+!*.js
+!*.json
+!*.md
+
+# Build products
+
+# npm files
+node_modules
+package.json
+package-lock.json

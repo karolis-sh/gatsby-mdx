@@ -1,0 +1,6 @@
+{
+  "extends": ["@k.sh/eslint-config"],
+  "env": {
+    "node": true
+  }
+}
