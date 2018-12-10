@@ -19,7 +19,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "npm run qa"
+      "pre-push": "npm run lint"
     }
   },
   "config": {
