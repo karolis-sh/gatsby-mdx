@@ -1,0 +1,9 @@
+{
+  "name": "gatsby-transformer-mdx",
+  "version": "0.0.0",
+  "description": "Mdx parser for Gatsby sites",
+  "keywords": [],
+  "license": "MIT",
+  "author": "Karolis Šarapnickis",
+  "main": "index.js"
+}
