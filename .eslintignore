@@ -2,3 +2,5 @@
 node_modules
 
 # Build products
+/demos/*/.cache
+/demos/*/public

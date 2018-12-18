@@ -4,6 +4,8 @@ package-lock.json
 *.log*
 
 # Build products
+/demos/*/.cache
+/demos/*/public
 
 # other
 .vscode

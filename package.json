@@ -1,19 +1,22 @@
 {
-  "name": "gatsby-netlify-mdx",
+  "name": "gatsby-mdx",
   "version": "0.0.0",
-  "keywords": [],
-  "homepage": "https://github.com/buz-zard/gatsby-netlify-mdx#readme",
-  "bugs": {
-    "url": "https://github.com/buz-zard/gatsby-netlify-mdx/issues"
-  },
+  "private": true,
+  "homepage": "https://github.com/buz-zard/gatsby-mdx#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/buz-zard/gatsby-netlify-mdx.git"
+    "url": "git+https://github.com/buz-zard/gatsby-mdx.git"
   },
   "license": "MIT",
   "author": "Karolis Šarapnickis",
+  "workspaces": [
+    "packages/*",
+    "demos/*"
+  ],
   "scripts": {
-    "format": "prettier --write '**/*.*' && sort-package-json",
+    "format": "run-p format:*",
+    "format:package-json": "sort-package-json package.json packages/*/package.json",
+    "format:prettier": "prettier --write '**/*.*'",
     "lint": "eslint ."
   },
   "husky": {
@@ -31,7 +34,9 @@
     "@k.sh/eslint-config": "^1.6.0",
     "cz-conventional-changelog": "^2.1.0",
     "husky": "^1.2.0",
+    "lerna": "^3.6.0",
     "lint-staged": "^8.1.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^1.15.3",
     "pretty-quick": "^1.8.0",
     "sort-package-json": "^1.17.0"

@@ -4,6 +4,8 @@
 !*.md
 
 # Build products
+/demos/*/.cache
+/demos/*/public
 
 # npm files
 node_modules
