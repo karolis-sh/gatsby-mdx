@@ -1,9 +1,14 @@
-# 🚧 WIP 🚧
+# gatsby-mdx monorepo
 
 [![Build Status][build-badge]][build]
 [![License: MIT][license-badge]][license]
-
 [![code style: prettier][code-style-badge]][code-style]
+
+## Packages
+
+### [`gatsby-transformer-mdx`][packages/gatsby-transformer-mdx]
+
+Lightweight plugin that enables MDX support in Gatsby sites.
 
 ## License
 

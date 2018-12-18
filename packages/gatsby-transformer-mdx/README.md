@@ -3,8 +3,9 @@
 [![npm version][version-badge]][version]
 [![Build Status][build-badge]][build]
 [![License: MIT][license-badge]][license]
+[![module formats: cjs][module-formats-badge]][unpkg-bundle]
 
-[![code style: prettier][code-style-badge]][code-style]
+Lightweight Gatsby plugin that adds MDX support to your sites.
 
 ## Install
 
@@ -124,6 +125,6 @@ MIT
 [build]: https://travis-ci.org/buz-zard/gatsby-mdx
 [license-badge]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license]: https://opensource.org/licenses/MIT
-[code-style-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
-[code-style]: https://github.com/prettier/prettier
 [other-gatsby-mdx]: https://github.com/ChristopherBiscardi/gatsby-mdx
+[module-formats-badge]: https://img.shields.io/badge/module%20formats-cjs-green.svg
+[unpkg-bundle]: https://unpkg.com/gatsby-transformer-mdx/
