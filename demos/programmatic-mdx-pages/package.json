@@ -1,5 +1,6 @@
 {
-	"name": "mini-blog",
+  "private": true,
+	"name": "@demos/programmatic-mdx-pages",
 	"version": "0.0.0",
 	"license": "MIT",
 	"scripts": {
