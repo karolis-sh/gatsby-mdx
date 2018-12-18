@@ -10,7 +10,8 @@
   "license": "MIT",
   "author": "Karolis Šarapnickis",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "demos/*"
   ],
   "scripts": {
     "format": "run-p format:*",

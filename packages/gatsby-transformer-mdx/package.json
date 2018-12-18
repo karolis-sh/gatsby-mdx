@@ -9,6 +9,14 @@
   "license": "MIT",
   "author": "Karolis Šarapnickis",
   "main": "index.js",
+  "homepage": "https://github.com/buz-zard/gatsby-mdx#readme",
+  "bugs": {
+    "url": "https://github.com/buz-zard/gatsby-mdx/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buz-zard/gatsby-mdx.git"
+  },
   "dependencies": {
     "@babel/plugin-proposal-export-default-from": "^7.2.0",
     "@mdx-js/loader": "^0.16.6",
