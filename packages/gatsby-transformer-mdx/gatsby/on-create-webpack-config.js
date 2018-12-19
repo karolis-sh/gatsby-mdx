@@ -1,3 +1,4 @@
+const path = require('path');
 const remarkFrontmatter = require('remark-frontmatter');
 const getOptions = require('../utils/get-options');
 
@@ -11,6 +12,12 @@ module.exports = ({ actions, loaders }, pluginOptions) => {
           test: /.mdx?$/,
           use: [
             loaders.js(options.loaders.js()),
+            options.globalImports && {
+              loader: path.resolve(__dirname, '../utils/webpack-code-inject-loader.js'),
+              options: {
+                code: options.globalImports,
+              },
+            },
             {
               loader: '@mdx-js/loader',
               options: options.loaders.mdx({
@@ -20,7 +27,7 @@ module.exports = ({ actions, loaders }, pluginOptions) => {
                 ],
               }),
             },
-          ],
+          ].filter(Boolean),
         },
       ],
     },

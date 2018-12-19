@@ -4,6 +4,8 @@
   "description": "Mdx parser for Gatsby sites",
   "keywords": [
     "gatsby",
+    "gatsby-plugin",
+    "gatsby-transformer",
     "mdx"
   ],
   "license": "MIT",
@@ -21,7 +23,9 @@
     "@babel/plugin-proposal-export-default-from": "^7.2.0",
     "@mdx-js/loader": "^0.16.6",
     "gray-matter": "^4.0.1",
-    "remark-frontmatter": "^1.3.1"
+    "loader-utils": "^1.1.0",
+    "remark-frontmatter": "^1.3.1",
+    "schema-utils": "^1.0.0"
   },
   "peerDependencies": {
     "gatsby": "^2"
