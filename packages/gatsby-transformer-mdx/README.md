@@ -86,7 +86,7 @@ exports.createPages = async ({ actions, graphql }) => {
 - `loaders`
 - `globalImports`
 
-### Altering the webpack mdx loaders via `loaders` option
+### Altering the webpack mdx loaders with `loaders`
 
 ```js
 // gatsby-config.js
@@ -108,6 +108,29 @@ module.exports = {
   ],
 };
 ```
+
+### Adding components to mdx scope with `globalImports`
+
+```javascript
+// gatsby-config.js
+module.exports = {
+  plugins: [
+    {
+      resolve: 'gatsby-transformer-mdx',
+      options: {
+        globalImports: `
+          import Clock from 'react-live-clock';
+          import { PaperBox } from '~global-ui';
+        `,
+      },
+    },
+  ],
+};
+```
+
+Checkout the [demo](../../demos/global-component-scope).
+
+\* To use local code - setup [aliases](../../demos/global-component-scope/gatsby-node.js)
 
 ## License
 

@@ -8,7 +8,7 @@
 
 ### [`gatsby-transformer-mdx`](/packages/gatsby-transformer-mdx)
 
-Lightweight plugin that enables MDX support in Gatsby sites.
+Lightweight plugin that enables MDX file support in Gatsby sites.
 
 Checkout the [demos](/demos).
 
