@@ -1,6 +1,12 @@
 {
   "extends": ["@k.sh/eslint-config"],
   "env": {
-    "node": true
+    "node": true,
+    "browser": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "react/default-props-match-prop-types": [1, { "allowRequiredDefaults": true }]
   }
 }

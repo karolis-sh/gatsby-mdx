@@ -6,6 +6,7 @@
 # Build products
 /demos/*/.cache
 /demos/*/public
+/packages/*/lib
 
 # npm files
 node_modules

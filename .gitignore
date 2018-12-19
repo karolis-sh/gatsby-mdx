@@ -6,6 +6,7 @@ package-lock.json
 # Build products
 /demos/*/.cache
 /demos/*/public
+/packages/*/lib
 
 # other
 .vscode

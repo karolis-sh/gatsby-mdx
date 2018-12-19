@@ -7,4 +7,5 @@ node_js:
   - '9'
   - '8'
 script:
-  - yarn lint
+  - yarn build
+  - yarn qa

@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "name": "@demos/mdx-scoped-runtime-playground",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "Karolis Šarapnickis",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
+  },
+  "dependencies": {
+    "@babel/standalone": "^7.2.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "mdx-scoped-runtime": "^0.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
