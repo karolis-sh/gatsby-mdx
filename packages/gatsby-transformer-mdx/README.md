@@ -5,7 +5,7 @@
 [![License: MIT][license-badge]][license]
 [![module formats: cjs][module-formats-badge]][unpkg-bundle]
 
-Lightweight Gatsby plugin that adds MDX support to your sites.
+Mdx files handling in Gatsby sites.
 
 ## Install
 
@@ -108,13 +108,6 @@ module.exports = {
 };
 ```
 
-## FAQ
-
-1. How is this package different from [`gatsby-mdx`][other-gatsby-mdx]?
-
-The idea of this is package is to provide MDX support without compromising compatibility,
-so `gatsby-transformer-mdx` does have less features but works on IE and Edge.
-
 ## License
 
 MIT
@@ -125,6 +118,5 @@ MIT
 [build]: https://travis-ci.org/buz-zard/gatsby-mdx
 [license-badge]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license]: https://opensource.org/licenses/MIT
-[other-gatsby-mdx]: https://github.com/ChristopherBiscardi/gatsby-mdx
 [module-formats-badge]: https://img.shields.io/badge/module%20formats-cjs-green.svg
 [unpkg-bundle]: https://unpkg.com/gatsby-transformer-mdx/
