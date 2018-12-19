@@ -84,6 +84,7 @@ exports.createPages = async ({ actions, graphql }) => {
 ## Options
 
 - `loaders`
+- `globalImports`
 
 ### Altering the webpack mdx loaders via `loaders` option
 
