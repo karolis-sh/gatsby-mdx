@@ -21,6 +21,7 @@
     "format:prettier": "prettier --write '**/*.*'",
     "lint": "eslint .",
     "qa": "run-p lint test",
+    "release": "run-s clean build qa && lerna publish",
     "test": "lerna run test --ignore @demos/*"
   },
   "husky": {

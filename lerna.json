@@ -6,7 +6,7 @@
   "command": {
     "publish": {
       "conventionalCommits": true,
-      "ignoreChanges": ["demos/**/*", "**/*.md"]
+      "ignoreChanges": ["demos/**/*", "packages/*/*.md"]
     }
   }
 }
