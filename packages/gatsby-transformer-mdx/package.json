@@ -1,6 +1,6 @@
 {
   "name": "gatsby-transformer-mdx",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Mdx parser for Gatsby sites",
   "keywords": [
     "gatsby",
