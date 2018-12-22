@@ -12,12 +12,6 @@ module.exports = ({ actions, loaders }, pluginOptions) => {
           test: /.mdx?$/,
           use: [
             loaders.js(options.loaders.js()),
-            options.globalImports && {
-              loader: path.resolve(__dirname, '../utils/webpack-code-inject-loader.js'),
-              options: {
-                code: options.globalImports,
-              },
-            },
             {
               loader: '@mdx-js/loader',
               options: options.loaders.mdx({
@@ -26,6 +20,13 @@ module.exports = ({ actions, loaders }, pluginOptions) => {
                   [remarkFrontmatter, { type: 'yaml', marker: '-', fence: '---' }],
                 ],
               }),
+            },
+            (options.globalImports || options.defaultLayout) && {
+              loader: path.resolve(__dirname, '../utils/webpack-mdx-inject-loader.js'),
+              options: {
+                globalImports: options.globalImports,
+                defaultLayout: options.defaultLayout,
+              },
             },
           ].filter(Boolean),
         },
