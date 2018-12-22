@@ -6,7 +6,8 @@
   "command": {
     "publish": {
       "conventionalCommits": true,
-      "ignoreChanges": ["demos/**/*", "packages/*/*.md"]
+      "ignoreChanges": ["demos/**/*", "packages/*/*.md"],
+      "message": "chore: release"
     }
   }
 }
