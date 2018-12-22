@@ -15,7 +15,10 @@ module.exports = async ({ node, actions, loadNodeContent, createNodeId }) => {
       internal: { type: 'Mdx' },
       fileAbsolutePath: node.absolutePath,
       sourceName: node.sourceInstanceName,
-      frontmatter,
+      frontmatter: {
+        ...frontmatter,
+        title: frontmatter.title == null ? '' : frontmatter.title,
+      },
     };
 
     mdxNode.internal.contentDigest = crypto

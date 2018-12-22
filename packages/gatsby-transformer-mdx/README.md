@@ -85,6 +85,7 @@ exports.createPages = async ({ actions, graphql }) => {
 
 - `loaders`
 - `globalImports`
+- `defaultLayout`
 
 ### Altering the webpack mdx loaders with `loaders`
 
@@ -128,9 +129,46 @@ module.exports = {
 };
 ```
 
+```md
+<!-- any-mdx-file.mdx -->
+
+# Hello
+
+<PaperBox>Lore ipsum</PaperBox>
+```
+
 Checkout the [demo](../../demos/global-component-scope).
 
-\* To use local code - setup [aliases](../../demos/global-component-scope/gatsby-node.js)
+\* It's best to setup [aliases](../../demos/global-component-scope/gatsby-node.js)
+if you have mdx files in multiple places.
+
+### Define default mdx layout with `defaultLayout`
+
+```javascript
+// gatsby-config.js
+module.exports = {
+  plugins: [
+    {
+      resolve: 'gatsby-transformer-mdx',
+      options: {
+        defaultLayout: `
+          import Layout from '~layouts/PurpleLayout'
+
+          export default Layout
+        `,
+      },
+    },
+    'gatsby-plugin-catch-links',
+  ],
+};
+```
+
+You can always override it with `export default` syntax.
+
+Checkout the [demo](../../demos/default-mdx-layout).
+
+\* It's best to setup [aliases](../../demos/global-component-scope/gatsby-node.js)
+if you have mdx files in multiple places.
 
 ## License
 

@@ -1,7 +1,7 @@
 {
 	"private": true,
-	"name": "@demos/global-component-scope",
-	"version": "0.1.1",
+	"name": "@demos/default-mdx-layout",
+	"version": "0.0.0",
 	"license": "MIT",
 	"scripts": {
 		"clean": "rimraf .cache public",
@@ -12,11 +12,11 @@
 	},
 	"dependencies": {
 		"gatsby": "^2.0.53",
+		"gatsby-plugin-catch-links": "^2.0.9",
 		"prop-types": "^15.6.2",
 		"react": "^16.6.3",
 		"react-dom": "^16.6.3",
-		"react-helmet": "^5.2.0",
-		"react-live-clock": "^3.0.0"
+		"react-helmet": "^5.2.0"
 	},
 	"devDependencies": {
 		"@mdx-js/mdx": "^0.16.6",
