@@ -19,9 +19,10 @@
     "format": "run-p format:*",
     "format:package-json": "sort-package-json package.json packages/*/package.json",
     "format:prettier": "prettier --write '**/*.*'",
+    "git:sync-tags": "git tag -d $(git tag) && git fetch --tags",
     "lint": "eslint .",
     "qa": "run-p lint test",
-    "release": "run-s clean build qa && lerna publish",
+    "release": "run-s git:sync-tags clean build qa && lerna publish",
     "test": "lerna run test --ignore @demos/*"
   },
   "husky": {
