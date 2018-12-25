@@ -48,5 +48,6 @@
     "jest": "^23.6.0",
     "react": "^16.6.3",
     "rimraf": "^2.6.2"
-  }
+  },
+  "gitHead": "ca2560c87845eac1dfadfc15878f20bfc0348560"
 }
