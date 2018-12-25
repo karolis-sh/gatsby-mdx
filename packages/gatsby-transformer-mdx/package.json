@@ -1,7 +1,7 @@
 {
   "name": "gatsby-transformer-mdx",
-  "version": "0.3.0",
-  "description": "Mdx parser for Gatsby sites",
+  "version": "0.4.0",
+  "description": "Gatsby plugin to handle MDX files",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
@@ -11,14 +11,11 @@
   "license": "MIT",
   "author": "Karolis Šarapnickis",
   "main": "index.js",
-  "homepage": "https://github.com/buz-zard/gatsby-mdx#readme",
+  "homepage": "https://github.com/buz-zard/gatsby-mdx/blob/master/packages/gatsby-transformer-mdx/README.md",
   "bugs": {
     "url": "https://github.com/buz-zard/gatsby-mdx/issues"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/buz-zard/gatsby-mdx.git"
-  },
+  "repository": "https://github.com/buz-zard/gatsby-mdx/blob/master/packages/gatsby-transformer-mdx",
   "scripts": {
     "test": "jest"
   },
@@ -39,5 +36,6 @@
   },
   "devDependencies": {
     "jest": "^23.6.0"
-  }
+  },
+  "gitHead": "ca2560c87845eac1dfadfc15878f20bfc0348560"
 }
