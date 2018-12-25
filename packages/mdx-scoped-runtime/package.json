@@ -1,22 +1,20 @@
 {
   "name": "mdx-scoped-runtime",
   "version": "0.1.0",
-  "description": "",
+  "description": "@mdx-js/runtime wrapper that handles full MDX syntax",
   "keywords": [
     "mdx",
-    "mdx-runtime"
+    "mdx-runtime",
+    "scope"
   ],
   "license": "MIT",
   "author": "Karolis Šarapnickis",
   "main": "lib/index.js",
-  "homepage": "https://github.com/buz-zard/gatsby-mdx#readme",
+  "homepage": "https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime/README.md",
   "bugs": {
     "url": "https://github.com/buz-zard/gatsby-mdx/issues"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/buz-zard/gatsby-mdx.git"
-  },
+  "repository": "https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime",
   "scripts": {
     "clean": "rimraf lib",
     "build": "babel src --out-dir lib --source-maps --ignore **/*.test.js",
