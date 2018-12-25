@@ -8,9 +8,12 @@
 
 ### [`gatsby-transformer-mdx`](/packages/gatsby-transformer-mdx)
 
-Lightweight plugin that enables MDX file support in Gatsby sites.
+MDX file support for Gatsby sites.
 
-Checkout the [demos](/demos).
+### [`mdx-scoped-runtime`](/packages/mdx-scoped-runtime)
+
+This is a wrapper around [`mdx-runtime`][mdx-runtime] that strips down the `import ...`
+and `export default Layout` out of the MDX at runtime.
 
 ## License
 
