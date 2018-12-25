@@ -86,6 +86,7 @@ exports.createPages = async ({ actions, graphql }) => {
 - `loaders`
 - `globalImports`
 - `defaultLayout`
+- `pagesPath`
 
 ### Altering the webpack mdx loaders with `loaders`
 
@@ -169,6 +170,24 @@ Checkout the [demo](../../demos/default-mdx-layout).
 
 \* It's best to setup [aliases](../../demos/global-component-scope/gatsby-node.js)
 if you have mdx files in multiple places.
+
+### Define mdx pages location with `pagesPath`
+
+```javascript
+// gatsby-config.js
+module.exports = {
+  plugins: [
+    {
+      resolve: 'gatsby-transformer-mdx',
+      options: {
+        pagesPath: `${__dirname}/src/blog`,
+      },
+    },
+  ],
+};
+```
+
+\* The default is `__dirname + '/src/pages'`.
 
 ## License
 
