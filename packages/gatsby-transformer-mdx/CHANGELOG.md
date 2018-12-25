@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/gatsby-transformer-mdx/compare/gatsby-transformer-mdx@0.3.0...gatsby-transformer-mdx@0.4.0) (2018-12-25)
+
+### Features
+
+- add pagesPath option ([1d70e9d](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/gatsby-transformer-mdx/commit/1d70e9d))
+
 # [0.3.0](https://github.com/buz-zard/gatsby-mdx/compare/gatsby-transformer-mdx@0.2.0...gatsby-transformer-mdx@0.3.0) (2018-12-22)
 
 ### Bug Fixes

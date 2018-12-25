@@ -1,6 +1,6 @@
 {
   "name": "gatsby-transformer-mdx",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Gatsby plugin to handle MDX files",
   "keywords": [
     "gatsby",
