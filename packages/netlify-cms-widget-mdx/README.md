@@ -5,6 +5,8 @@
 [![License: MIT][license-badge]][license]
 [![module formats: cjs][module-formats-badge]][unpkg-bundle]
 
+Experimental MDX file support in Netlify CMS.
+
 ![preview](docs/preview.png)
 
 ## Install

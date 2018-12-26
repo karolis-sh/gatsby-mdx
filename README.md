@@ -13,7 +13,11 @@ MDX file support for Gatsby sites.
 ### [`mdx-scoped-runtime`](/packages/mdx-scoped-runtime)
 
 This is a wrapper around [`mdx-runtime`][mdx-runtime] that strips down the `import ...`
-and `export default Layout` out of the MDX at runtime.
+and `export default ...` out of the MDX at runtime.
+
+### [`netlify-cms-widget-mdx`](/packages/netlify-cms-widget-mdx)
+
+Widget for mdx files in Netlify CMS.
 
 ## License
 
@@ -25,3 +29,4 @@ MIT
 [license]: https://opensource.org/licenses/MIT
 [code-style-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
 [code-style]: https://github.com/prettier/prettier
+[mdx-runtime]: https://www.npmjs.com/package/@mdx-js/runtime
