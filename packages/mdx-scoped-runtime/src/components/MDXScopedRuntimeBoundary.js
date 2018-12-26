@@ -8,8 +8,8 @@ class MDXScopedRuntimeBoundary extends React.Component {
 
   componentDidUpdate(prevProps) {
     const { error } = this.state;
-    const { mdx } = this.props;
-    if (error && mdx !== prevProps.mdx) {
+    const { children } = this.props;
+    if (error && children !== prevProps.children) {
       this.setState({ error: undefined }); // eslint-disable-line react/no-did-update-set-state
     }
   }
@@ -20,7 +20,15 @@ class MDXScopedRuntimeBoundary extends React.Component {
 
   render() {
     const { error } = this.state;
-    if (error) return <div>Invalid MDX</div>;
+    if (error)
+      return (
+        <pre
+          className="mdx-scoped-runtime__error"
+          style={{ overflowX: 'auto', background: 'rgba(255, 0, 0, .1)' }}
+        >
+          {`Invalid MDX:\n${error.toString()}`}
+        </pre>
+      );
     return <MDXScopedRuntime {...this.props} />;
   }
 }
