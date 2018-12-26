@@ -1,6 +1,6 @@
 {
   "name": "netlify-cms-widget-mdx",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Widget for mdx files in Netlify CMS.",
   "keywords": [
     "mdx",
