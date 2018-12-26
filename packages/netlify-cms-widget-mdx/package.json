@@ -23,6 +23,7 @@
     "start": "webpack-serve --config webpack.dev.config.js --log-level error --open-path '/#/collections/post'"
   },
   "dependencies": {
+    "@babel/standalone": "^7.2.5",
     "emotion": "^9.2.6",
     "immutable": "^3.7.6",
     "lodash": "^4.17.10",
