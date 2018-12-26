@@ -8,8 +8,8 @@ class MDXScopedRuntimeBoundary extends React.Component {
 
   componentDidUpdate(prevProps) {
     const { error } = this.state;
-    const { mdx } = this.props;
-    if (error && mdx !== prevProps.mdx) {
+    const { children } = this.props;
+    if (error && children !== prevProps.children) {
       this.setState({ error: undefined }); // eslint-disable-line react/no-did-update-set-state
     }
   }
