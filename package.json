@@ -49,7 +49,7 @@
     "sort-package-json": "^1.17.0"
   },
   "lint-staged": {
-    "package.json": [
+    "**/package.json": [
       "sort-package-json",
       "git add"
     ],
