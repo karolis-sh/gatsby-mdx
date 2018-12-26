@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.3.0 (2018-12-26)
+
+### Bug Fixes
+
+- recover rendering after an error in mdx ([524f802](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime/commit/524f802))
+
+### Features
+
+- **errors:** improve babelify error message display ([d530a86](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime/commit/d530a86))
+- **mdx-scoped-runtime:** add [@mdx-js](https://github.com/mdx-js)/\*[@0](https://github.com/0).15.7 supported implementation ([16b2166](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime/commit/16b2166))
+
 # 0.2.1 (2018-12-25)
 
 ### Features

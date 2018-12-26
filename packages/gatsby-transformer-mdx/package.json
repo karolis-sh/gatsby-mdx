@@ -1,6 +1,6 @@
 {
   "name": "gatsby-transformer-mdx",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Gatsby plugin to handle MDX files",
   "keywords": [
     "gatsby",
@@ -8,14 +8,14 @@
     "gatsby-transformer",
     "mdx"
   ],
-  "license": "MIT",
-  "author": "Karolis Šarapnickis",
-  "main": "index.js",
   "homepage": "https://github.com/buz-zard/gatsby-mdx/blob/master/packages/gatsby-transformer-mdx/README.md",
   "bugs": {
     "url": "https://github.com/buz-zard/gatsby-mdx/issues"
   },
   "repository": "https://github.com/buz-zard/gatsby-mdx/blob/master/packages/gatsby-transformer-mdx",
+  "license": "MIT",
+  "author": "Karolis Šarapnickis",
+  "main": "index.js",
   "scripts": {
     "test": "jest"
   },
@@ -31,10 +31,10 @@
     "schema-utils": "^1.0.0",
     "slash": "^2.0.0"
   },
-  "peerDependencies": {
-    "gatsby": "^2"
-  },
   "devDependencies": {
     "jest": "^23.6.0"
+  },
+  "peerDependencies": {
+    "gatsby": "^2"
   }
 }
