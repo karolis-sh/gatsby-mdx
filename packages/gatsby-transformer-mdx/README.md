@@ -17,7 +17,7 @@ npm i -D gatsby-transformer-mdx
 
 ## How to use
 
-### Using MDX as simple components
+### Default case
 
 In your `gatsby-config.js`:
 
@@ -26,6 +26,9 @@ module.exports = {
   plugins: ['gatsby-transformer-mdx'],
 };
 ```
+
+This way all your mdx files in `src/pages` will converted to pages. Also you can
+import mdx files as any other React component.
 
 ### Using MDX to programmatically create pages
 
