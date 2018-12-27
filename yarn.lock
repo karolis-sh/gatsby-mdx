@@ -793,6 +793,11 @@
   resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.2.2.tgz#b82eceb2c329cfd0325315a99a905d51077bca1c"
   integrity sha512-c21FyLQanUgBNb9SrgSko1AIVY+C7AUa2r6g/l4m0rKip1Y2j4FrDwQpKr1999wFkatgq9IloN1n3RCZ45sznA==
 
+"@babel/standalone@^7.2.5":
+  version "7.2.5"
+  resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.2.5.tgz#7a6dd6761fc78853066e384a5e9ba0a1f7df2d11"
+  integrity sha512-U00wHmbh0eCUCAsCN1cz/WS2aB/UXjQrALsUmVIcugiK3HiI4PEh93PeGsaJttBmj0+Zfp1SpUNxPl6s8KPHUQ==
+
 "@babel/template@7.0.0-beta.44":
   version "7.0.0-beta.44"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.0.0-beta.44.tgz#f8832f4fdcee5d59bf515e595fc5106c529b394f"
@@ -6669,7 +6674,7 @@ gatsby-source-filesystem@^2.0.11:
     xstate "^3.1.0"
 
 "gatsby-transformer-mdx@file:packages/gatsby-transformer-mdx":
-  version "0.4.0"
+  version "0.4.1"
   dependencies:
     "@babel/plugin-proposal-export-default-from" "^7.2.0"
     "@mdx-js/loader" "^0.16.6"
@@ -9986,7 +9991,7 @@ mdurl@^1.0.1:
   integrity sha1-/oWy7HWlkDfyrf7BAP1sYBdhFS4=
 
 "mdx-scoped-runtime@file:packages/mdx-scoped-runtime":
-  version "0.2.1"
+  version "0.3.0"
   dependencies:
     "@babel/plugin-proposal-export-default-from" "^7.2.0"
     "@babel/plugin-syntax-jsx" "^7.2.0"
