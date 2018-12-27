@@ -148,6 +148,8 @@ if you have mdx files in multiple places.
 
 ### Define default mdx layout with `defaultLayout`
 
+Pass the absolute path to module:
+
 ```javascript
 // gatsby-config.js
 module.exports = {
@@ -155,11 +157,7 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-mdx',
       options: {
-        defaultLayout: `
-          import Layout from '~layouts/PurpleLayout'
-
-          export default Layout
-        `,
+        defaultLayout: `${__dirname}/src/layouts/PurpleLayout`,
       },
     },
     'gatsby-plugin-catch-links',
@@ -171,8 +169,7 @@ You can always override it with `export default` syntax.
 
 Checkout the [demo](../../demos/default-mdx-layout).
 
-\* It's best to setup [aliases](../../demos/global-component-scope/gatsby-node.js)
-if you have mdx files in multiple places.
+\* Make sure the provided default layout module exports the layout component as default
 
 ### Define mdx pages location with `pagesPath`
 

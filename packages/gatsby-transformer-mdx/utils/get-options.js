@@ -13,7 +13,6 @@ module.exports = (pluginOptions = {}) => {
   if (typeof options.loaders.mdx !== 'function') options.loaders.mdx = value => value;
 
   options.globalImports = cleanInsertableCode(options.globalImports);
-  options.defaultLayout = cleanInsertableCode(options.defaultLayout);
 
   return options;
 };

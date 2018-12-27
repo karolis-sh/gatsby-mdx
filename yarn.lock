@@ -6678,6 +6678,7 @@ gatsby-source-filesystem@^2.0.11:
   dependencies:
     "@babel/plugin-proposal-export-default-from" "^7.2.0"
     "@mdx-js/loader" "^0.16.6"
+    "@mdx-js/mdx" "^0.16.6"
     chokidar "^2.0.4"
     gatsby-plugin-page-creator "^2.0.5"
     glob "^7.1.3"

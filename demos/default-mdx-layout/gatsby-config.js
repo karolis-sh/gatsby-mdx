@@ -6,11 +6,7 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-mdx',
       options: {
-        defaultLayout: `
-          import Layout from '../layouts/PurpleLayout'
-
-          export default Layout
-        `,
+        defaultLayout: `${__dirname}/src/layouts/PurpleLayout`,
       },
     },
     'gatsby-plugin-catch-links',
