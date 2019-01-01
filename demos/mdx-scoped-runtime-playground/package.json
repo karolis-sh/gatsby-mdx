@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@babel/standalone": "^7.2.2",
-    "mdx-scoped-runtime": "file:../../packages/mdx-scoped-runtime",
+    "mdx-scoped-runtime": "*",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"

@@ -5,10 +5,9 @@ import MDX from '@mdx-js/runtime';
 import transpile from '../utils/transpile';
 
 class MDXScopedRuntime extends React.Component {
-  state = { code: undefined };
-
-  componentDidMount() {
-    this.transpileMdx();
+  constructor(props) {
+    super(props);
+    this.state = { code: transpile({ mdx: props.children }).code };
   }
 
   componentDidUpdate(prevProps) {

@@ -1541,15 +1541,6 @@
     libnpm "^2.0.1"
     write-file-atomic "^2.3.0"
 
-"@mdx-js/loader@^0.15.7":
-  version "0.15.7"
-  resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-0.15.7.tgz#dd184301607579b3aa5021dc50e2ae2a04e478dc"
-  integrity sha512-0I+mXEfKYDFOEG9gYeBe/QRF1Sdffb+UqOUIPcY5SjS9BkqtkSUHPjC4WgfDVAY+PI4cMWs3B2Fzn4p4ScyBew==
-  dependencies:
-    "@mdx-js/mdx" "^0.15.7"
-    "@mdx-js/tag" "^0.15.6"
-    loader-utils "^1.1.0"
-
 "@mdx-js/loader@^0.16.6":
   version "0.16.6"
   resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-0.16.6.tgz#f0bc32fb3cf1104ca390cafbd31eef74ea839692"
@@ -2966,11 +2957,6 @@ babel-plugin-transform-react-jsx@^6.8.0:
     babel-helper-builder-react-jsx "^6.24.1"
     babel-plugin-syntax-jsx "^6.8.0"
     babel-runtime "^6.22.0"
-
-babel-plugin-transform-remove-import@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-remove-import/-/babel-plugin-transform-remove-import-1.0.0.tgz#3dfe54d497bf1c2d83a6770f81a862dc79e1b8a0"
-  integrity sha1-Pf5U1Je/HC2DpncPgahi3HnhuKA=
 
 babel-plugin-transform-strict-mode@^6.24.1:
   version "6.24.1"
@@ -6674,7 +6660,7 @@ gatsby-source-filesystem@^2.0.11:
     xstate "^3.1.0"
 
 "gatsby-transformer-mdx@file:packages/gatsby-transformer-mdx":
-  version "0.4.1"
+  version "1.0.0"
   dependencies:
     "@babel/plugin-proposal-export-default-from" "^7.2.0"
     "@mdx-js/loader" "^0.16.6"
@@ -10006,19 +9992,6 @@ mdurl@^1.0.1:
   resolved "https://registry.yarnpkg.com/mdurl/-/mdurl-1.0.1.tgz#fe85b2ec75a59037f2adfec100fd6c601761152e"
   integrity sha1-/oWy7HWlkDfyrf7BAP1sYBdhFS4=
 
-"mdx-scoped-runtime@file:packages/mdx-scoped-runtime":
-  version "0.3.0"
-  dependencies:
-    "@babel/plugin-proposal-export-default-from" "^7.2.0"
-    "@babel/plugin-syntax-jsx" "^7.2.0"
-    "@mdx-js/loader" "^0.15.7"
-    "@mdx-js/mdx" "^0.15.7"
-    "@mdx-js/runtime" "^0.15.7"
-    babel-plugin-transform-remove-import "^1.0.0"
-    gray-matter "^4.0.1"
-    prop-types "^15.6.2"
-    remark-frontmatter "^1.3.1"
-
 meant@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/meant/-/meant-1.0.1.tgz#66044fea2f23230ec806fb515efea29c44d2115d"
@@ -12651,7 +12624,7 @@ react-dnd@^7.0.0:
     recompose "^0.30.0"
     shallowequal "^1.1.0"
 
-react-dom@^16.0.0:
+react-dom@^16.0.0, react-dom@^16.7.0:
   version "16.7.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.7.0.tgz#a17b2a7ca89ee7390bc1ed5eb81783c7461748b8"
   integrity sha512-D0Ufv1ExCAmF38P2Uh1lwpminZFRXEINJe53zRAbm4KPwSyd6DY/uDoS0Blj9jvPpn1+wivKpZYc8aAAN/nAkg==
@@ -15497,7 +15470,7 @@ unist-util-remove-position@^1.0.0:
   dependencies:
     unist-util-visit "^1.1.0"
 
-unist-util-remove@^1.0.0:
+unist-util-remove@^1.0.0, unist-util-remove@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/unist-util-remove/-/unist-util-remove-1.0.1.tgz#3e967d2aeb3ee9e7f0ee8354172986fba7ff33a5"
   integrity sha512-nL+3O0nBB2Oi8ixVzIfJQLtNOMPIFzwoAIKvhDzEL8B15Nq7EY0KBQPYULjNrEmrwYMCkWp5XGTQiAlYZAL/rw==
