@@ -1,7 +1,6 @@
-const path = require('path');
 const remarkFrontmatter = require('remark-frontmatter');
 const getOptions = require('../utils/get-options');
-const remarkMdxDefaultLayoutPlugin = require('../utils/remark-mdx-default-layout');
+const remarkMdxDefaultsPlugin = require('../utils/remark-mdx-defaults');
 
 module.exports = ({ actions, loaders }, pluginOptions) => {
   const options = getOptions(pluginOptions);
@@ -13,26 +12,23 @@ module.exports = ({ actions, loaders }, pluginOptions) => {
           test: /.mdx?$/,
           use: [
             loaders.js(options.loaders.js()),
-            options.globalImports && {
-              loader: path.resolve(__dirname, '../utils/webpack-code-inject-loader.js'),
-              options: {
-                code: options.globalImports,
-              },
-            },
             {
               loader: '@mdx-js/loader',
               options: options.loaders.mdx({
                 mdPlugins: [
                   // Remove frontmatter from body output
                   [remarkFrontmatter, { type: 'yaml', marker: '-', fence: '---' }],
-                  options.defaultLayout && [
-                    remarkMdxDefaultLayoutPlugin,
-                    { layout: options.defaultLayout },
+                  (options.defaultImports || options.defaultLayout) && [
+                    remarkMdxDefaultsPlugin,
+                    {
+                      layout: options.defaultLayout,
+                      imports: options.defaultImports,
+                    },
                   ],
                 ].filter(Boolean),
               }),
             },
-          ].filter(Boolean),
+          ],
         },
       ],
     },

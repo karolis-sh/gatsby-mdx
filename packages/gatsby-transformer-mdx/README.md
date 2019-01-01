@@ -86,10 +86,28 @@ exports.createPages = async ({ actions, graphql }) => {
 
 ## Options
 
-- `loaders`
-- `globalImports`
-- `defaultLayout`
 - `pagesPath`
+- `loaders`
+- `defaultImports`
+- `defaultLayout`
+
+### Define mdx pages location with `pagesPath`
+
+```javascript
+// gatsby-config.js
+module.exports = {
+  plugins: [
+    {
+      resolve: 'gatsby-transformer-mdx',
+      options: {
+        pagesPath: `${__dirname}/src/blog`,
+      },
+    },
+  ],
+};
+```
+
+\* The default is `__dirname + '/src/pages'`.
 
 ### Altering the webpack mdx loaders with `loaders`
 
@@ -103,9 +121,11 @@ module.exports = {
       resolve: 'gatsby-transformer-mdx',
       options: {
         loaders: {
-          js: () => ({ cacheDirectory: false }), // eg. disable babel-loader cache
+          // eg. disable babel-loader cache
+          js: () => ({ cacheDirectory: false }),
+          // eg. append emoji plugin
           mdx: options => ({
-            mdPlugins: [...options.mdPlugins, emoji], // eg. append emoji plugin
+            mdPlugins: [...options.mdPlugins, emoji],
           }),
         },
       },
@@ -114,7 +134,7 @@ module.exports = {
 };
 ```
 
-### Adding components to mdx scope with `globalImports`
+### Adding components to mdx scope with `defaultImports`
 
 ```javascript
 // gatsby-config.js
@@ -123,10 +143,10 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-mdx',
       options: {
-        globalImports: `
-          import Clock from 'react-live-clock';
-          import { PaperBox } from '~global-ui';
-        `,
+        defaultImports: [
+          "import Clock from 'react-live-clock';",
+          { value: '{ PinkBox }', path: `${__dirname}/src/ui` },
+        ],
       },
     },
   ],
@@ -136,15 +156,14 @@ module.exports = {
 ```md
 <!-- any-mdx-file.mdx -->
 
-# Hello
+# The time is <Clock format="HH:mm:ss" ticking />
 
-<PaperBox>Lore ipsum</PaperBox>
+<PinkBox>
+  Lore ipsum
+</PinkBox>
 ```
 
 Checkout the [demo](../../demos/global-component-scope).
-
-\* It's best to setup [aliases](../../demos/global-component-scope/gatsby-node.js)
-if you have mdx files in multiple places.
 
 ### Define default mdx layout with `defaultLayout`
 
@@ -169,25 +188,7 @@ You can always override it with `export default` syntax.
 
 Checkout the [demo](../../demos/default-mdx-layout).
 
-\* Make sure the provided default layout module exports the layout component as default
-
-### Define mdx pages location with `pagesPath`
-
-```javascript
-// gatsby-config.js
-module.exports = {
-  plugins: [
-    {
-      resolve: 'gatsby-transformer-mdx',
-      options: {
-        pagesPath: `${__dirname}/src/blog`,
-      },
-    },
-  ],
-};
-```
-
-\* The default is `__dirname + '/src/pages'`.
+\* Make sure that the provided default layout module exports the layout component as default
 
 ## License
 
