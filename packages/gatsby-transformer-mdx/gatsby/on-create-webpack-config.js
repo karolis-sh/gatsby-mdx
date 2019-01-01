@@ -5,6 +5,8 @@ const remarkMdxDefaultsPlugin = require('../utils/remark-mdx-defaults');
 module.exports = ({ actions, loaders }, pluginOptions) => {
   const options = getOptions(pluginOptions);
 
+  const mdxOptions = options.loaders.mdx() || {};
+
   actions.setWebpackConfig({
     module: {
       rules: [
@@ -14,7 +16,8 @@ module.exports = ({ actions, loaders }, pluginOptions) => {
             loaders.js(options.loaders.js()),
             {
               loader: '@mdx-js/loader',
-              options: options.loaders.mdx({
+              options: {
+                ...mdxOptions,
                 mdPlugins: [
                   // Remove frontmatter from body output
                   [remarkFrontmatter, { type: 'yaml', marker: '-', fence: '---' }],
@@ -25,8 +28,9 @@ module.exports = ({ actions, loaders }, pluginOptions) => {
                       imports: options.defaultImports,
                     },
                   ],
+                  ...(mdxOptions.mdPlugins || []),
                 ].filter(Boolean),
-              }),
+              },
             },
           ],
         },

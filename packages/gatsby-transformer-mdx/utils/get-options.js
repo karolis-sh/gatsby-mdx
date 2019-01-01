@@ -32,8 +32,8 @@ module.exports = (pluginOptions = {}) => {
   );
 
   if (options.loaders == null) options.loaders = {};
-  if (options.loaders.js == null) options.loaders.js = value => value;
-  if (options.loaders.mdx == null) options.loaders.mdx = value => value;
+  if (options.loaders.js == null) options.loaders.js = () => undefined;
+  if (options.loaders.mdx == null) options.loaders.mdx = () => undefined;
 
   const { error } = Joi.validate(options, OPTIONS_SCHEMA);
   if (error) throw new Error(`Invalid gatsby-transformer-mdx options - ${error.toString()}`);

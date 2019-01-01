@@ -121,18 +121,18 @@ module.exports = {
       resolve: 'gatsby-transformer-mdx',
       options: {
         loaders: {
-          // eg. disable babel-loader cache
+          // eg. Disable babel-loader cache
           js: () => ({ cacheDirectory: false }),
-          // eg. append emoji plugin
-          mdx: options => ({
-            mdPlugins: [...options.mdPlugins, emoji],
-          }),
+          // eg. Use emoji plugin
+          mdx: () => ({ mdPlugins: [emoji] }),
         },
       },
     },
   ],
 };
 ```
+
+Checkout the [demo](../../demos/enhancing-mdx-loaders).
 
 ### Adding components to mdx scope with `defaultImports`
 
