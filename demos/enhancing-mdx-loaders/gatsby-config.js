@@ -1,3 +1,5 @@
+const emoji = require('remark-emoji');
+
 module.exports = {
   siteMetadata: {
     title: 'MDX Home',
@@ -6,7 +8,9 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-mdx',
       options: {
-        defaultLayout: `${__dirname}/src/layouts/PurpleLayout`,
+        loaders: {
+          mdx: () => ({ mdPlugins: [emoji] }),
+        },
       },
     },
     'gatsby-plugin-catch-links',

@@ -17,7 +17,7 @@ npm i -D gatsby-transformer-mdx
 
 ## How to use
 
-### Using MDX as simple components
+### Default case
 
 In your `gatsby-config.js`:
 
@@ -26,6 +26,9 @@ module.exports = {
   plugins: ['gatsby-transformer-mdx'],
 };
 ```
+
+This way all your mdx files in `src/pages` will converted to pages. Also you can
+import mdx files as any other React component.
 
 ### Using MDX to programmatically create pages
 
@@ -83,93 +86,10 @@ exports.createPages = async ({ actions, graphql }) => {
 
 ## Options
 
-- `loaders`
-- `globalImports`
-- `defaultLayout`
-- `pagesPath`
-
-### Altering the webpack mdx loaders with `loaders`
-
-```js
-// gatsby-config.js
-const emoji = require('remark-emoji');
-
-module.exports = {
-  plugins: [
-    {
-      resolve: 'gatsby-transformer-mdx',
-      options: {
-        loaders: {
-          js: () => ({ cacheDirectory: false }), // eg. disable babel-loader cache
-          mdx: options => ({
-            mdPlugins: [...options.mdPlugins, emoji], // eg. append emoji plugin
-          }),
-        },
-      },
-    },
-  ],
-};
-```
-
-### Adding components to mdx scope with `globalImports`
-
-```javascript
-// gatsby-config.js
-module.exports = {
-  plugins: [
-    {
-      resolve: 'gatsby-transformer-mdx',
-      options: {
-        globalImports: `
-          import Clock from 'react-live-clock';
-          import { PaperBox } from '~global-ui';
-        `,
-      },
-    },
-  ],
-};
-```
-
-```md
-<!-- any-mdx-file.mdx -->
-
-# Hello
-
-<PaperBox>Lore ipsum</PaperBox>
-```
-
-Checkout the [demo](../../demos/global-component-scope).
-
-\* It's best to setup [aliases](../../demos/global-component-scope/gatsby-node.js)
-if you have mdx files in multiple places.
-
-### Define default mdx layout with `defaultLayout`
-
-```javascript
-// gatsby-config.js
-module.exports = {
-  plugins: [
-    {
-      resolve: 'gatsby-transformer-mdx',
-      options: {
-        defaultLayout: `
-          import Layout from '~layouts/PurpleLayout'
-
-          export default Layout
-        `,
-      },
-    },
-    'gatsby-plugin-catch-links',
-  ],
-};
-```
-
-You can always override it with `export default` syntax.
-
-Checkout the [demo](../../demos/default-mdx-layout).
-
-\* It's best to setup [aliases](../../demos/global-component-scope/gatsby-node.js)
-if you have mdx files in multiple places.
+- [`pagesPath`](#define-mdx-pages-location-with-pagespath)
+- [`loaders`](#altering-the-webpack-mdx-loaders-with-loaders)
+- [`defaultLayout`](#define-default-mdx-layout-with-defaultlayout)
+- [`defaultImports`](#adding-components-to-mdx-scope-with-defaultimports)
 
 ### Define mdx pages location with `pagesPath`
 
@@ -188,6 +108,87 @@ module.exports = {
 ```
 
 \* The default is `__dirname + '/src/pages'`.
+
+### Altering the webpack mdx loaders with `loaders`
+
+```js
+// gatsby-config.js
+const emoji = require('remark-emoji');
+
+module.exports = {
+  plugins: [
+    {
+      resolve: 'gatsby-transformer-mdx',
+      options: {
+        loaders: {
+          // eg. Disable babel-loader cache
+          js: () => ({ cacheDirectory: false }),
+          // eg. Use emoji plugin
+          mdx: () => ({ mdPlugins: [emoji] }),
+        },
+      },
+    },
+  ],
+};
+```
+
+Checkout the [demo](../../demos/enhancing-mdx-loaders).
+
+### Define default mdx layout with `defaultLayout`
+
+Pass the absolute path to module:
+
+```javascript
+// gatsby-config.js
+module.exports = {
+  plugins: [
+    {
+      resolve: 'gatsby-transformer-mdx',
+      options: {
+        defaultLayout: `${__dirname}/src/layouts/PurpleLayout`,
+      },
+    },
+    'gatsby-plugin-catch-links',
+  ],
+};
+```
+
+You can always override it with `export default` syntax.
+
+Checkout the [demo](../../demos/default-mdx-layout).
+
+\* Make sure that the provided default layout module exports the layout component as default.
+
+### Adding components to mdx scope with `defaultImports`
+
+```javascript
+// gatsby-config.js
+module.exports = {
+  plugins: [
+    {
+      resolve: 'gatsby-transformer-mdx',
+      options: {
+        defaultImports: [
+          "import Clock from 'react-live-clock';",
+          { value: '{ PinkBox }', path: `${__dirname}/src/ui` },
+        ],
+      },
+    },
+  ],
+};
+```
+
+```md
+<!-- any-mdx-file.mdx -->
+
+# The time is <Clock format="HH:mm:ss" ticking />
+
+<PinkBox>
+  Lore ipsum
+</PinkBox>
+```
+
+Checkout the [demo](../../demos/default-mdx-imports).
 
 ## License
 

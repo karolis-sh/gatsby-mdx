@@ -1,6 +1,29 @@
 const path = require('path');
+const Joi = require('joi');
 
-const cleanInsertableCode = require('./clean-insertable-code');
+const IMPORTS_SCHEMA = Joi.alternatives().try(
+  Joi.string(),
+  Joi.object().keys({
+    value: Joi.string(),
+    path: Joi.string(),
+  })
+);
+
+const LAYOUT_SCHEMA = Joi.string();
+
+const OPTIONS_SCHEMA = Joi.object()
+  .keys({
+    loaders: Joi.object().keys({
+      js: Joi.func(),
+      mdx: Joi.func(),
+    }),
+    pagesPath: Joi.string(),
+    defaultImports: Joi.alternatives()
+      .try(IMPORTS_SCHEMA, Joi.array().items(IMPORTS_SCHEMA))
+      .optional(),
+    defaultLayout: LAYOUT_SCHEMA.optional(),
+  })
+  .unknown();
 
 module.exports = (pluginOptions = {}) => {
   const options = Object.assign(
@@ -9,11 +32,11 @@ module.exports = (pluginOptions = {}) => {
   );
 
   if (options.loaders == null) options.loaders = {};
-  if (typeof options.loaders.js !== 'function') options.loaders.js = value => value;
-  if (typeof options.loaders.mdx !== 'function') options.loaders.mdx = value => value;
+  if (options.loaders.js == null) options.loaders.js = () => undefined;
+  if (options.loaders.mdx == null) options.loaders.mdx = () => undefined;
 
-  options.globalImports = cleanInsertableCode(options.globalImports);
-  options.defaultLayout = cleanInsertableCode(options.defaultLayout);
+  const { error } = Joi.validate(options, OPTIONS_SCHEMA);
+  if (error) throw new Error(`Invalid gatsby-transformer-mdx options - ${error.toString()}`);
 
   return options;
 };

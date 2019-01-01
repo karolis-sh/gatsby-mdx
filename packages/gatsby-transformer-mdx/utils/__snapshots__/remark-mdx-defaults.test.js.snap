@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`imports should import via list of strings 1`] = `
+"import { Divider } from \\"ui-lib\\"
+import { Separator } from \\"anywhere\\"
+import { Divider } from \\"../../components\\"
+
+export default class MDXContent extends React.Component {
+  constructor(props) {
+    super(props)
+    this.layout = null
+  }
+  render() {
+    const { components, ...props } = this.props
+
+    return <MDXTag
+             name=\\"wrapper\\"
+             
+             components={components}>
+
+
+<MDXTag name=\\"h1\\" components={components}>{\`Hello world\`}</MDXTag>
+<Divider />
+<MDXTag name=\\"ul\\" components={components}>
+<MDXTag name=\\"li\\" components={components} parentName=\\"ul\\">{\`item 1\`}</MDXTag>
+<MDXTag name=\\"li\\" components={components} parentName=\\"ul\\">{\`item 2\`}</MDXTag>
+</MDXTag>
+<Separator />
+           </MDXTag>
+  }
+}"
+`;
+
+exports[`imports should import via string 1`] = `
+"import { Separator } from \\"anywhere\\"
+import { Divider } from \\"../../components\\"
+
+export default class MDXContent extends React.Component {
+  constructor(props) {
+    super(props)
+    this.layout = null
+  }
+  render() {
+    const { components, ...props } = this.props
+
+    return <MDXTag
+             name=\\"wrapper\\"
+             
+             components={components}>
+
+<MDXTag name=\\"h1\\" components={components}>{\`Hello world\`}</MDXTag>
+<Divider />
+<MDXTag name=\\"ul\\" components={components}>
+<MDXTag name=\\"li\\" components={components} parentName=\\"ul\\">{\`item 1\`}</MDXTag>
+<MDXTag name=\\"li\\" components={components} parentName=\\"ul\\">{\`item 2\`}</MDXTag>
+</MDXTag>
+<Separator />
+           </MDXTag>
+  }
+}"
+`;
+
+exports[`layout should add layout to mdx with imports 1`] = `
+"import Layout from \\"../components\\";
+import ___DefaultLayout from \\"../components/Layout4\\";
+
+export default class MDXContent extends React.Component {
+  constructor(props) {
+    super(props)
+    this.layout = ___DefaultLayout
+  }
+  render() {
+    const { components, ...props } = this.props
+
+    return <MDXTag
+             name=\\"wrapper\\"
+             Layout={this.layout} layoutProps={props}
+             components={components}>
+<MDXTag name=\\"h1\\" components={components}>{\`Hello world\`}</MDXTag>
+<MDXTag name=\\"ul\\" components={components}>
+<MDXTag name=\\"li\\" components={components} parentName=\\"ul\\">{\`item 1\`}</MDXTag>
+<MDXTag name=\\"li\\" components={components} parentName=\\"ul\\">{\`item 2\`}</MDXTag>
+</MDXTag>
+<Layout title=\\"Yep\\" />
+
+
+           </MDXTag>
+  }
+}"
+`;
+
+exports[`layout should add layout to simple mdx 1`] = `
+"import ___DefaultLayout from \\"../components/Layout3\\";
+
+export default class MDXContent extends React.Component {
+  constructor(props) {
+    super(props)
+    this.layout = ___DefaultLayout
+  }
+  render() {
+    const { components, ...props } = this.props
+
+    return <MDXTag
+             name=\\"wrapper\\"
+             Layout={this.layout} layoutProps={props}
+             components={components}><MDXTag name=\\"h1\\" components={components}>{\`Hello world\`}</MDXTag>
+<MDXTag name=\\"ul\\" components={components}>
+<MDXTag name=\\"li\\" components={components} parentName=\\"ul\\">{\`item 1\`}</MDXTag>
+<MDXTag name=\\"li\\" components={components} parentName=\\"ul\\">{\`item 2\`}</MDXTag>
+</MDXTag>
+
+
+           </MDXTag>
+  }
+}"
+`;
+
+exports[`layout should not override defined layout 1`] = `
+"
+
+export default class MDXContent extends React.Component {
+  constructor(props) {
+    super(props)
+    this.layout = ({children}) => <div style={{border: '1px solid red'}}>{children}</div>
+  }
+  render() {
+    const { components, ...props } = this.props
+
+    return <MDXTag
+             name=\\"wrapper\\"
+             Layout={this.layout} layoutProps={props}
+             components={components}>
+<MDXTag name=\\"h1\\" components={components}>{\`The Title\`}</MDXTag>
+<MDXTag name=\\"p\\" components={components}>{\`Lore ipsum\`}</MDXTag>
+           </MDXTag>
+  }
+}"
+`;
+
+exports[`layout should not override imported layout 1`] = `
+"import Layout from \\"somewhere\\";
+
+export default class MDXContent extends React.Component {
+  constructor(props) {
+    super(props)
+    this.layout = Layout
+  }
+  render() {
+    const { components, ...props } = this.props
+
+    return <MDXTag
+             name=\\"wrapper\\"
+             Layout={this.layout} layoutProps={props}
+             components={components}>
+
+<MDXTag name=\\"h2\\" components={components}>{\`Help\`}</MDXTag>
+<MDXTag name=\\"blockquote\\" components={components}>
+<MDXTag name=\\"p\\" components={components} parentName=\\"blockquote\\">{\`node fix-stuff.js\`}</MDXTag>
+</MDXTag>
+           </MDXTag>
+  }
+}"
+`;

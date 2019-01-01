@@ -6,10 +6,10 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-mdx',
       options: {
-        globalImports: `
-          import Clock from 'react-live-clock';
-          import { PaperBox } from '~global-ui';
-        `,
+        defaultImports: [
+          "import Clock from 'react-live-clock';",
+          { value: '{ PinkBox }', path: `${__dirname}/src/ui` },
+        ],
       },
     },
   ],
