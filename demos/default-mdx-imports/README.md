@@ -1,4 +1,4 @@
-# global-component-scope
+# default-mdx-imports
 
 Sample gatsby site that uses [`gatsby-transformer-mdx`][gatsby-transformer-mdx].
 

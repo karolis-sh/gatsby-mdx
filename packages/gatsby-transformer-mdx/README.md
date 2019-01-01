@@ -86,10 +86,10 @@ exports.createPages = async ({ actions, graphql }) => {
 
 ## Options
 
-- `pagesPath`
-- `loaders`
-- `defaultImports`
-- `defaultLayout`
+- [`pagesPath`](#define-mdx-pages-location-with-pagespath)
+- [`loaders`](#altering-the-webpack-mdx-loaders-with-loaders)
+- [`defaultLayout`](#define-default-mdx-layout-with-defaultlayout)
+- [`defaultImports`](#adding-components-to-mdx-scope-with-defaultimports)
 
 ### Define mdx pages location with `pagesPath`
 
@@ -134,6 +134,31 @@ module.exports = {
 
 Checkout the [demo](../../demos/enhancing-mdx-loaders).
 
+### Define default mdx layout with `defaultLayout`
+
+Pass the absolute path to module:
+
+```javascript
+// gatsby-config.js
+module.exports = {
+  plugins: [
+    {
+      resolve: 'gatsby-transformer-mdx',
+      options: {
+        defaultLayout: `${__dirname}/src/layouts/PurpleLayout`,
+      },
+    },
+    'gatsby-plugin-catch-links',
+  ],
+};
+```
+
+You can always override it with `export default` syntax.
+
+Checkout the [demo](../../demos/default-mdx-layout).
+
+\* Make sure that the provided default layout module exports the layout component as default.
+
 ### Adding components to mdx scope with `defaultImports`
 
 ```javascript
@@ -163,32 +188,7 @@ module.exports = {
 </PinkBox>
 ```
 
-Checkout the [demo](../../demos/global-component-scope).
-
-### Define default mdx layout with `defaultLayout`
-
-Pass the absolute path to module:
-
-```javascript
-// gatsby-config.js
-module.exports = {
-  plugins: [
-    {
-      resolve: 'gatsby-transformer-mdx',
-      options: {
-        defaultLayout: `${__dirname}/src/layouts/PurpleLayout`,
-      },
-    },
-    'gatsby-plugin-catch-links',
-  ],
-};
-```
-
-You can always override it with `export default` syntax.
-
-Checkout the [demo](../../demos/default-mdx-layout).
-
-\* Make sure that the provided default layout module exports the layout component as default
+Checkout the [demo](../../demos/default-mdx-imports).
 
 ## License
 

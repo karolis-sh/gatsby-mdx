@@ -1,4 +1,4 @@
-# default-mdx-layout
+# enhancing-mdx-loaders
 
 Sample gatsby site that uses [`gatsby-transformer-mdx`][gatsby-transformer-mdx].
 

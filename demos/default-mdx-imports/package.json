@@ -1,6 +1,6 @@
 {
-	"name": "@demos/global-component-scope",
-	"version": "0.1.0",
+	"name": "@demos/default-mdx-imports",
+	"version": "0.0.0",
 	"private": true,
 	"license": "MIT",
 	"scripts": {
