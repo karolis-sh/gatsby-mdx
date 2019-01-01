@@ -9,5 +9,10 @@
       "message": "chore: release"
     }
   },
-  "ignoreChanges": ["packages/*/*.md"]
+  "ignoreChanges": [
+    "**/*.md",
+    "**/*.test.js",
+    "**/*/__snapshots__/",
+    "packages/netlify-cms-widget-mdx/dev/"
+  ]
 }
