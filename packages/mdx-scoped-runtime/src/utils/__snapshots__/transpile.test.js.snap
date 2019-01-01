@@ -1,26 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should drop imports 1`] = `
-"<MDXTag name=\\"wrapper\\" components={components}>
-  <MDXTag name=\\"h1\\" components={components}>{\`Hey test\`}</MDXTag>
-  <List items={'howdy'.split('')} /></MDXTag>"
+"
+
+<MDXTag name=\\"wrapper\\"  components={components}><MDXTag name=\\"h1\\" components={components}>{\`Hey test\`}</MDXTag>
+<List items={'howdy'.split('')} /></MDXTag>"
 `;
 
 exports[`should handle imported layout 1`] = `
-"<MDXTag name=\\"wrapper\\" Layout={Layout} layoutProps={props} components={components}>
+"
 
-  <MDXTag name=\\"h1\\" components={components}>{\`Hey test\`}</MDXTag>
-  <List items={'howdy'.split('')} /></MDXTag>"
+<MDXTag name=\\"wrapper\\" Layout={Layout} layoutProps={props} components={components}>
+<MDXTag name=\\"h1\\" components={components}>{\`Hey test\`}</MDXTag>
+<List items={'howdy'.split('')} /></MDXTag>"
 `;
 
 exports[`should handle layout 1`] = `
-"<MDXTag name=\\"wrapper\\" Layout={({
-  children
-}) => <div>{children}</div>} layoutProps={props} components={components}>
+"
 
-  <MDXTag name=\\"h1\\" components={components}>{\`Hey test\`}</MDXTag>
-  <List items={'howdy'.split('')} />
-  <Clock /></MDXTag>"
+<MDXTag name=\\"wrapper\\" Layout={({children}) => <div>{children}</div>} layoutProps={props} components={components}>
+<MDXTag name=\\"h1\\" components={components}>{\`Hey test\`}</MDXTag>
+<List items={'howdy'.split('')} />
+<Clock /></MDXTag>"
 `;
 
-exports[`should transpile simple markdown 1`] = `"<MDXTag name=\\"wrapper\\" components={components}><MDXTag name=\\"h1\\" components={components}>{\`Hi, world\`}</MDXTag></MDXTag>"`;
+exports[`should transpile simple markdown 1`] = `
+"
+
+<MDXTag name=\\"wrapper\\"  components={components}><MDXTag name=\\"h1\\" components={components}>{\`Hi, world\`}</MDXTag></MDXTag>"
+`;

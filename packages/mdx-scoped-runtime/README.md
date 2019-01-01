@@ -8,12 +8,12 @@
 This is a wrapper around [`mdx-runtime`][mdx-runtime] that strips down the `import ...`
 and `export default Layout` out of the MDX at runtime.
 
-\* For now the package only works with `@mdx-js/(loader/mdx/runtime)@0.15.x` version.
+\* For now the package only works with `@mdx-js/(mdx/runtime)@0.15.x` version.
 
 ## Install
 
 ```shell
-npm i mdx-scoped-runtime @babel/standalone
+npm i mdx-scoped-runtime
 ```
 
 ## How to use
