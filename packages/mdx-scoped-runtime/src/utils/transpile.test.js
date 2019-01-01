@@ -1,10 +1,7 @@
 import transpile from './transpile';
 
 it('should transpile simple markdown', () => {
-  expect(transpile({ mdx: '# Hi, world' })).toEqual({
-    code:
-      '<MDXTag name="wrapper" components={components}><MDXTag name="h1" components={components}>{`Hi, world`}</MDXTag></MDXTag>',
-  });
+  expect(transpile({ mdx: '# Hi, world' }).code).toMatchSnapshot();
 });
 
 it('should drop imports', () => {
@@ -15,12 +12,8 @@ it('should drop imports', () => {
 # Hey test
 <List items={'howdy'.split('')} />
 `,
-    })
-  ).toEqual({
-    code: `<MDXTag name="wrapper" components={components}>
-  <MDXTag name="h1" components={components}>{\`Hey test\`}</MDXTag>
-  <List items={'howdy'.split('')} /></MDXTag>`,
-  });
+    }).code
+  ).toMatchSnapshot();
 });
 
 it('should handle layout', () => {
@@ -34,11 +27,6 @@ export default Layout
 # Hey test
 <List items={'howdy'.split('')} />
 `,
-    })
-  ).toEqual({
-    code: `<MDXTag name="wrapper" Layout={Layout} layoutProps={props} components={components}>
-
-  <MDXTag name="h1" components={components}>{\`Hey test\`}</MDXTag>
-  <List items={'howdy'.split('')} /></MDXTag>`,
-  });
+    }).code
+  ).toMatchSnapshot();
 });
