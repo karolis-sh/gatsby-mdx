@@ -23,6 +23,7 @@
     "lint": "eslint .",
     "qa": "run-p lint test",
     "release": "run-s git:sync-tags clean build qa && lerna publish",
+    "release-canary": "yarn release --canary --preid beta",
     "test": "lerna run test --ignore @demos/*"
   },
   "husky": {
