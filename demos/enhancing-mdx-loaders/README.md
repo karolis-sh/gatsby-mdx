@@ -1,8 +1,8 @@
-# global-component-scope
+# enhancing-mdx-loaders
 
 Sample gatsby site that uses [`gatsby-transformer-mdx`][gatsby-transformer-mdx].
 
-It demonstrates how to add global components.
+It demonstrates how to enhance mdx loader with remark emoji MD plugin.
 
 ```bash
 yarn && yarn start
