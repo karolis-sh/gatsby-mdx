@@ -1541,15 +1541,6 @@
     libnpm "^2.0.1"
     write-file-atomic "^2.3.0"
 
-"@mdx-js/loader@^0.15.7":
-  version "0.15.7"
-  resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-0.15.7.tgz#dd184301607579b3aa5021dc50e2ae2a04e478dc"
-  integrity sha512-0I+mXEfKYDFOEG9gYeBe/QRF1Sdffb+UqOUIPcY5SjS9BkqtkSUHPjC4WgfDVAY+PI4cMWs3B2Fzn4p4ScyBew==
-  dependencies:
-    "@mdx-js/mdx" "^0.15.7"
-    "@mdx-js/tag" "^0.15.6"
-    loader-utils "^1.1.0"
-
 "@mdx-js/loader@^0.16.6":
   version "0.16.6"
   resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-0.16.6.tgz#f0bc32fb3cf1104ca390cafbd31eef74ea839692"
@@ -12633,7 +12624,7 @@ react-dnd@^7.0.0:
     recompose "^0.30.0"
     shallowequal "^1.1.0"
 
-react-dom@^16.0.0:
+react-dom@^16.0.0, react-dom@^16.7.0:
   version "16.7.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.7.0.tgz#a17b2a7ca89ee7390bc1ed5eb81783c7461748b8"
   integrity sha512-D0Ufv1ExCAmF38P2Uh1lwpminZFRXEINJe53zRAbm4KPwSyd6DY/uDoS0Blj9jvPpn1+wivKpZYc8aAAN/nAkg==
