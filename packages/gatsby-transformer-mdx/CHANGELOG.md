@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/gatsby-transformer-mdx/compare/gatsby-transformer-mdx@0.4.1...gatsby-transformer-mdx@1.0.0) (2019-01-01)
+
+### Code Refactoring
+
+- **default-layout:** modify layout in AST ([3c0529b](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/gatsby-transformer-mdx/commit/3c0529b))
+- **imports:** rename globalImports -> defaultImports, and change structure ([8f846ee](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/gatsby-transformer-mdx/commit/8f846ee))
+- **options:** loader.mdx function does not receive any args ([92c129e](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/gatsby-transformer-mdx/commit/92c129e))
+
+### Features
+
+- options validation via Joi schema ([08fb092](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/gatsby-transformer-mdx/commit/08fb092))
+
+### BREAKING CHANGES
+
+- **options:** loaders.mdx function no longer receives arguments
+- **imports:** globalImports renamed to defaultImports and changed the options structure
+- **default-layout:** changes the way defaultLayout option value is interpreted
+
 ## [0.4.1](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/gatsby-transformer-mdx/compare/gatsby-transformer-mdx@0.4.0...gatsby-transformer-mdx@0.4.1) (2018-12-26)
 
 **Note:** Version bump only for package gatsby-transformer-mdx
