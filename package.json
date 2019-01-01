@@ -19,6 +19,7 @@
     "format": "run-p format:*",
     "format:package-json": "sort-package-json package.json packages/*/package.json",
     "format:prettier": "prettier --write '**/*.*'",
+    "git:sync-branches": "git branch --merged master --no-color | grep -v master | grep -v stable | xargs git branch -d",
     "git:sync-tags": "git tag -d $(git tag) && git fetch --tags",
     "lint": "eslint .",
     "qa": "run-p lint test",
