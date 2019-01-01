@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/netlify-cms-widget-mdx/compare/netlify-cms-widget-mdx@0.1.1...netlify-cms-widget-mdx@0.1.2) (2019-01-01)
+
+### Bug Fixes
+
+- **dependencies:** remove reundant [@babel](https://github.com/babel)/standalone dependency ([74d1558](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/netlify-cms-widget-mdx/commit/74d1558))
+
 ## [0.1.1](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/netlify-cms-widget-mdx/compare/netlify-cms-widget-mdx@0.1.0...netlify-cms-widget-mdx@0.1.1) (2018-12-26)
 
 ### Bug Fixes

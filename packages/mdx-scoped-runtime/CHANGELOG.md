@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime/compare/mdx-scoped-runtime@0.3.0...mdx-scoped-runtime@0.3.1) (2019-01-01)
+
+### Bug Fixes
+
+- **babel:** refactor out [@babel](https://github.com/babel)/standalone ([7eb03a6](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime/commit/7eb03a6))
+
 # 0.3.0 (2018-12-26)
 
 ### Bug Fixes
