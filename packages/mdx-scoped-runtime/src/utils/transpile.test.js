@@ -16,7 +16,7 @@ it('should drop imports', () => {
   ).toMatchSnapshot();
 });
 
-it('should handle layout', () => {
+it('should handle imported layout', () => {
   expect(
     transpile({
       mdx: `import { List } from "./ui";
@@ -26,6 +26,23 @@ export default Layout
 
 # Hey test
 <List items={'howdy'.split('')} />
+`,
+    }).code
+  ).toMatchSnapshot();
+});
+
+it('should handle layout', () => {
+  expect(
+    transpile({
+      mdx: `import { List } from "./ui";
+import Clock from "wherever";
+
+export default ({children}) => <div>{children}</div>
+
+# Hey test
+<List items={'howdy'.split('')} />
+
+<Clock />
 `,
     }).code
   ).toMatchSnapshot();
