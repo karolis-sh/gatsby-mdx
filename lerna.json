@@ -1,5 +1,5 @@
 {
-  "packages": ["packages/*", "demos/*"],
+  "packages": ["packages/*"],
   "npmClient": "yarn",
   "useWorkspaces": true,
   "version": "independent",
@@ -9,5 +9,5 @@
       "message": "chore: release"
     }
   },
-  "ignoreChanges": ["demos/**/*", "packages/*/*.md"]
+  "ignoreChanges": ["packages/*/*.md"]
 }
