@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime/compare/mdx-scoped-runtime@0.3.1...mdx-scoped-runtime@0.4.0) (2019-01-02)
+
+### Features
+
+- support mdPlugins and other runtime props ([4c67ed3](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime/commit/4c67ed3))
+
 ## [0.3.1](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime/compare/mdx-scoped-runtime@0.3.0...mdx-scoped-runtime@0.3.1) (2019-01-01)
 
 ### Bug Fixes
