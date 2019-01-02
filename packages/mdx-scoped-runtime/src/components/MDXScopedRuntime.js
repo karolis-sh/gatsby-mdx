@@ -1,48 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MDX from '@mdx-js/runtime';
+import remove from 'unist-util-remove';
 
-import transpile from '../utils/transpile';
-
-class MDXScopedRuntime extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { code: transpile({ mdx: props.children }).code };
-  }
-
-  componentDidUpdate(prevProps) {
-    const { children } = this.props;
-    if (prevProps.children !== children) this.transpileMdx();
-  }
-
-  transpileMdx = () => {
-    const { children } = this.props;
-    this.setState({ code: transpile({ mdx: children }).code });
-  };
-
-  render() {
-    const { code } = this.state;
-    const { components, scope } = this.props;
-    if (code) {
-      return (
-        <MDX components={components} scope={{ Layout: ({ children }) => children, ...scope }}>
-          {code}
-        </MDX>
-      );
-    }
-    return null;
-  }
+function MDXScopedRuntime({ scope, mdPlugins, ...props }) {
+  return (
+    <MDX
+      {...props}
+      scope={{ Layout: ({ children }) => children, ...scope }}
+      mdPlugins={[
+        () => tree => {
+          remove(tree, 'import');
+        },
+        ...mdPlugins,
+      ]}
+    />
+  );
 }
 
 MDXScopedRuntime.propTypes = {
-  children: PropTypes.string,
-  components: PropTypes.shape({}).isRequired,
   scope: PropTypes.shape({}).isRequired,
+  mdPlugins: PropTypes.arrayOf(PropTypes.any).isRequired,
 };
 
 MDXScopedRuntime.defaultProps = {
-  components: {},
   scope: {},
+  mdPlugins: [],
 };
 
 export default MDXScopedRuntime;
