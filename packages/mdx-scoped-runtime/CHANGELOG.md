@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime/compare/mdx-scoped-runtime@0.4.0...mdx-scoped-runtime@0.4.1) (2019-01-02)
+
+### Bug Fixes
+
+- add error boundary when mdx parsing fails ([6e7c82b](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime/commit/6e7c82b))
+
 # [0.4.0](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime/compare/mdx-scoped-runtime@0.3.1...mdx-scoped-runtime@0.4.0) (2019-01-02)
 
 ### Features
