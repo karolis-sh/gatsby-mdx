@@ -1,5 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should render simple mdx with layout 1`] = `
+"<div id=\\"layout\\">
+  <div><h1>Hi</h1></div>
+</div>
+"
+`;
+
 exports[`should render the example 1`] = `
 "<div id=\\"layout\\">
   <div>
