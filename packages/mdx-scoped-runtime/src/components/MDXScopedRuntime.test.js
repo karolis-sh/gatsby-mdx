@@ -30,3 +30,20 @@ export default Layout
     )
   ).toMatchSnapshot();
 });
+
+it('should render simple mdx with layout', () => {
+  expect(
+    prettier.format(
+      renderToString(
+        <MDX>
+          {`
+export default ({children}) => <div id="layout">{children}</div>
+
+# Hi
+`}
+        </MDX>
+      ),
+      { parser: 'html' }
+    )
+  ).toMatchSnapshot();
+});
