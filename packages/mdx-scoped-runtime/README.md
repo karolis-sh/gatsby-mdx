@@ -8,8 +8,6 @@
 This is a wrapper around [`mdx-runtime`][mdx-runtime] that strips down the `import ...`
 and `export default Layout` out of the MDX at runtime.
 
-\* For now the package only works with `@mdx-js/(mdx/runtime)@0.15.x` version.
-
 ## Install
 
 ```shell

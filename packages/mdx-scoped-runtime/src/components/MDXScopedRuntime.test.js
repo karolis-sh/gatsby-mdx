@@ -1,7 +1,7 @@
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import prettier from 'prettier';
-import MDX from './MDXScopedRuntimeBoundary';
+import MDX from './MDXScopedRuntime';
 
 it('should render the example', () => {
   expect(

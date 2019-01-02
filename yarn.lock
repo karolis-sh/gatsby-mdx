@@ -1701,9 +1701,9 @@
   integrity sha1-fyrX7FX5FEgvybHsS7GuYCjUYGY=
 
 "@types/node@*":
-  version "10.12.15"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.15.tgz#20e85651b62fd86656e57c9c9bc771ab1570bc59"
-  integrity sha512-9kROxduaN98QghwwHmxXO2Xz3MaWf+I1sLVAA6KJDF5xix+IyXVhds0MAfdNwtcpSrzhaTsNB0/jnL86fgUhqA==
+  version "10.12.18"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.18.tgz#1d3ca764718915584fcd9f6344621b7672665c67"
+  integrity sha512-fh+pAqt4xRzPfqA6eh3Z2y6fyZavRIumvjhaCL753+TVkGKGhpPeyrJG2JftD0T9q4GF00KjefsQ+PQNDdWQaQ==
 
 "@types/node@^7.0.11":
   version "7.10.2"
@@ -1741,7 +1741,7 @@
   resolved "https://registry.yarnpkg.com/@types/tmp/-/tmp-0.0.32.tgz#0d3cb31022f8427ea58c008af32b80da126ca4e3"
   integrity sha1-DTyzECL4Qn6ljACK8yuA2hJspOM=
 
-"@types/unist@*", "@types/unist@^2.0.0", "@types/unist@^2.0.2":
+"@types/unist@*", "@types/unist@^2.0.0":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.2.tgz#5dc0a7f76809b7518c0df58689cd16a19bd751c6"
   integrity sha512-iHI60IbyfQilNubmxsq4zqSjdynlmc2Q/QvH9kjzg9+CCYVVzq1O6tc7VBzSygIwnmOt07w80IG6HDQvjv3Liw==
@@ -15731,11 +15731,10 @@ vfile-location@^2.0.0:
   integrity sha512-KRL5uXQPoUKu+NGvQVL4XLORw45W62v4U4gxJ3vRlDfI9QsT4ZN1PNXn/zQpKUulqGDpYuT0XDfp5q9O87/y/w==
 
 vfile-message@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/vfile-message/-/vfile-message-1.1.0.tgz#4c7416dbeb35e1ce8151c018917a4a76f21dcb98"
-  integrity sha512-D9E9mTcn6b2uWxUgNSBQPWFywPxP87dZCkemuh01vNb7zntXgHtsrTorZdURrKSpFM0O1IlQVpfdmHuJuy6EGw==
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/vfile-message/-/vfile-message-1.1.1.tgz#5833ae078a1dfa2d96e9647886cd32993ab313e1"
+  integrity sha512-1WmsopSGhWt5laNir+633LszXvZ+Z/lxveBf6yhGsqnQIhlhzooZae7zV6YVM1Sdkw68dtAW3ow0pOdPANugvA==
   dependencies:
-    "@types/unist" "^2.0.2"
     unist-util-stringify-position "^1.1.1"
 
 vfile@^2.0.0:

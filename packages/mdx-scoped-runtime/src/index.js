@@ -1,3 +1,3 @@
-import MDXScopedRuntimeBoundary from './components/MDXScopedRuntimeBoundary';
+import MDXScopedRuntime from './components/MDXScopedRuntime';
 
-export default MDXScopedRuntimeBoundary;
+export default MDXScopedRuntime;

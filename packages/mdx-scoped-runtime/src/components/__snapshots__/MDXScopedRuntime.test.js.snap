@@ -1,12 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render the example 1`] = `
-"<div>
-  <div id=\\"layout\\">
-    <div>
-      <h1>Hello, world!</h1>
-      <code>dem0</code>
-    </div>
+"<div id=\\"layout\\">
+  <div>
+    <h1>Hello, world!</h1>
+    <code>dem0</code>
   </div>
 </div>
 "
