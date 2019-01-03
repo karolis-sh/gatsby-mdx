@@ -21,6 +21,10 @@
     "start": "yarn build --watch",
     "test": "jest src"
   },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/src/__tests__/__setup__.js",
+    "testRegex": "src/.+\\.test\\.js$"
+  },
   "dependencies": {
     "@mdx-js/runtime": "^0.15.7",
     "prop-types": "^15.6.2",
@@ -35,7 +39,10 @@
     "@babel/standalone": "^7.2.2",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
     "jest": "^23.6.0",
+    "jest-enzyme": "^7.0.1",
     "prettier": "^1.15.3",
     "react": "^16.6.3",
     "react-dom": "^16.7.0",

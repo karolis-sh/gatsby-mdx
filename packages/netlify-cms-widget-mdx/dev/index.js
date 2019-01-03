@@ -3,6 +3,7 @@ import React from 'react';
 import CMS, { init } from 'netlify-cms';
 import 'netlify-cms/dist/cms.css';
 import Trend from 'react-trend';
+import remarkEmojiPlugin from 'remark-emoji';
 
 import { MdxControl, setupPreview } from '../src';
 
@@ -45,6 +46,7 @@ CMS.registerWidget(
         />
       ),
     },
+    mdPlugins: [remarkEmojiPlugin],
   })
 );
 

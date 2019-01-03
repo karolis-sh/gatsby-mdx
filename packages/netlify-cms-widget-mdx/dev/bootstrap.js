@@ -51,5 +51,17 @@ Hello, world
 Lore ipsum
 `,
     },
+    '4-markdown-handled-with-md-plugins.mdx': {
+      content: `---
+title: 4. Markdown handled with md plugins
+---
+# For example mdPlugins
+
+Using [emoji plugin](https://github.com/rhysd/remark-emoji)
+
+**"\`:+1:\`"** gets converted to :+1:
+
+`,
+    },
   },
 };
