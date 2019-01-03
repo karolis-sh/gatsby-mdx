@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.3](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime/compare/mdx-scoped-runtime@0.4.2...mdx-scoped-runtime@0.4.3) (2019-01-03)
+
+**Note:** Version bump only for package mdx-scoped-runtime
+
 ## [0.4.2](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime/compare/mdx-scoped-runtime@0.4.1...mdx-scoped-runtime@0.4.2) (2019-01-03)
 
 ### Bug Fixes
