@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import remove from 'unist-util-remove';
-
-import MDX from './MDXRuntime';
+import MDX from '@mdx-js/runtime';
 
 class MDXScopedRuntime extends React.Component {
   state = { error: undefined };

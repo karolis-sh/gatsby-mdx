@@ -26,6 +26,7 @@
     "testRegex": "src/.+\\.test\\.js$"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^0.15.7",
     "@mdx-js/runtime": "^0.15.7",
     "prop-types": "^15.6.2",
     "unist-util-remove": "^1.0.1"
