@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/netlify-cms-widget-mdx/compare/netlify-cms-widget-mdx@0.2.0...netlify-cms-widget-mdx@0.2.1) (2019-01-03)
+
+**Note:** Version bump only for package netlify-cms-widget-mdx
+
 # [0.2.0](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/netlify-cms-widget-mdx/compare/netlify-cms-widget-mdx@0.1.5...netlify-cms-widget-mdx@0.2.0) (2019-01-03)
 
 ### Features

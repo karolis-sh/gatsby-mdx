@@ -1,6 +1,6 @@
 {
   "name": "@demos/mdx-scoped-runtime-playground",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "private": true,
   "description": "",
   "license": "MIT",
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@babel/standalone": "^7.2.2",
-    "mdx-scoped-runtime": "^0.4.3",
+    "mdx-scoped-runtime": "^0.4.4",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
