@@ -3,18 +3,48 @@ import { renderToString } from 'react-dom/server';
 import prettier from 'prettier';
 import MDX from './MDXScopedRuntime';
 
+const parse = mdx => prettier.format(renderToString(mdx), { parser: 'html' });
+
+it('should render simple mdx', () => {
+  expect(
+    parse(
+      <MDX>
+        {`
+# Lore ipsum
+
+- Apples
+- Pears
+`}
+      </MDX>
+    )
+  ).toMatchSnapshot();
+});
+
+it('should render simple mdx with layout', () => {
+  expect(
+    parse(
+      <MDX>
+        {`
+export default ({children}) => <div id="layout">{children}</div>
+
+# Hi
+`}
+      </MDX>
+    )
+  ).toMatchSnapshot();
+});
+
 it('should render the example', () => {
   expect(
-    prettier.format(
-      renderToString(
-        <MDX
-          scope={{
-            Demo: () => <code>dem0</code>,
-            // eslint-disable-next-line react/prop-types
-            Layout: ({ children }) => <div id="layout">{children}</div>,
-          }}
-        >
-          {`
+    parse(
+      <MDX
+        scope={{
+          Demo: () => <code>dem0</code>,
+          // eslint-disable-next-line react/prop-types
+          Layout: ({ children }) => <div id="layout">{children}</div>,
+        }}
+      >
+        {`
 import Demo from '../ui/Demo';
 import Layout from '../ui/Layout';
 
@@ -24,26 +54,7 @@ export default Layout
 
 <Demo />
 `}
-        </MDX>
-      ),
-      { parser: 'html' }
-    )
-  ).toMatchSnapshot();
-});
-
-it('should render simple mdx with layout', () => {
-  expect(
-    prettier.format(
-      renderToString(
-        <MDX>
-          {`
-export default ({children}) => <div id="layout">{children}</div>
-
-# Hi
-`}
-        </MDX>
-      ),
-      { parser: 'html' }
+      </MDX>
     )
   ).toMatchSnapshot();
 });
