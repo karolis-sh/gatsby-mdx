@@ -1,9 +1,13 @@
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import prettier from 'prettier';
+import { mount } from 'enzyme';
+
 import MDX from './MDXScopedRuntime';
 
-const parse = mdx => prettier.format(renderToString(mdx), { parser: 'html' });
+const format = html => prettier.format(html, { parser: 'html' });
+
+const parse = mdx => format(renderToString(mdx));
 
 it('should render simple mdx', () => {
   expect(
@@ -57,4 +61,12 @@ export default Layout
       </MDX>
     )
   ).toMatchSnapshot();
+});
+
+it('should handle componentDidCatch', () => {
+  const ERROR_MESSAGE = 'Oh oh! something happened...';
+  const wrapper = mount(<MDX># Oh boy</MDX>);
+  wrapper.instance().componentDidCatch(new Error(ERROR_MESSAGE));
+  expect(wrapper.text()).toContain(ERROR_MESSAGE);
+  expect(format(wrapper.html())).toMatchSnapshot();
 });
