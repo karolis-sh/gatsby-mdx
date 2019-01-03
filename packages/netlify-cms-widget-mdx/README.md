@@ -21,11 +21,13 @@ import { MdxControl, MdxPreview } from 'netlify-cms-widget-mdx';
 CMS.registerWidget('mdx', MdxControl, MdxPreview);
 ```
 
-To setup scope and/or components for your MDX content:
+To setup scope, components and other props for [`@mdx-js/runtime`](https://www.npmjs.com/package/@mdx-js/runtime):
 
 ```js
 import Trend from 'react-trend';
 import { MdxControl, setupPreview } from 'netlify-cms-widget-mdx';
+import Trend from 'react-trend';
+import remarkEmojiPlugin from 'remark-emoji';
 
 CMS.registerWidget(
   'mdx',
@@ -47,6 +49,7 @@ CMS.registerWidget(
         />
       ),
     },
+    mdPlugins: [remarkEmojiPlugin],
   })
 );
 ```

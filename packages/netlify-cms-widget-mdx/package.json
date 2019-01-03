@@ -44,6 +44,7 @@
     "netlify-cms": "^2.3.1",
     "react": "^16.6.3",
     "react-trend": "^1.2.4",
+    "remark-emoji": "^2.0.2",
     "rimraf": "^2.6.2",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.1",

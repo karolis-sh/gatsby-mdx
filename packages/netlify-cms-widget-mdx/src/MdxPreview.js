@@ -2,18 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import MDX from 'mdx-scoped-runtime';
 
-export default function MdxPreview({ value, scope, components }) {
+export default function MdxPreview({ value, mdx }) {
   return (
     <div className="netlify-cms-widget-mdx-preview">
-      <MDX components={components} scope={scope}>
-        {value}
-      </MDX>
+      <MDX {...mdx}>{value}</MDX>
     </div>
   );
 }
 
 MdxPreview.propTypes = {
   value: PropTypes.string.isRequired,
-  scope: PropTypes.shape({}),
-  components: PropTypes.shape({}),
+  mdx: PropTypes.shape({}).isRequired,
+};
+
+MdxPreview.defaultProps = {
+  mdx: {},
 };
