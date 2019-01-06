@@ -929,10 +929,10 @@
     log-update "^2.3.0"
     strip-ansi "^3.0.1"
 
-"@k.sh/eslint-config@^1.6.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@k.sh/eslint-config/-/eslint-config-1.7.0.tgz#79cf5594812a9daa8627778f32320ea4d9efb840"
-  integrity sha512-kRXh7hd3Zs6cR5ePObm5RQQT8OBq7d9ooBAx4OxCXbV9NdSx81NdGzZEcSAvbsrYxrXjBcxzdZ5GmYYXSmLZMA==
+"@k.sh/eslint-config@^1.8.1":
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/@k.sh/eslint-config/-/eslint-config-1.8.1.tgz#6573f93e0afa98be5ca92f0b48b48cd54a4bbb01"
+  integrity sha512-92vn38qyklOvUxDKYywZ9t+coJEFTCaEs9t3WuI2rXJ+PQFhi5K27fSGqJqXa3uDRnYvm2JBnAqhmrZIdJiaRw==
   dependencies:
     eslint "^5.10.0"
     eslint-config-airbnb "^17.1.0"
