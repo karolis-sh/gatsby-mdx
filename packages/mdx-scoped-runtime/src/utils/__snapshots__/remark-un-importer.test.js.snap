@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should remove imports 1`] = `
+"
+
+export default ({components, ...props}) => <MDXTag name=\\"wrapper\\"  components={components}><MDXTag name=\\"h1\\" components={components}>{\`Hello world\`}</MDXTag>
+<Divider />
+<MDXTag name=\\"ul\\" components={components}>
+<MDXTag name=\\"li\\" components={components} parentName=\\"ul\\">{\`item 1\`}</MDXTag>
+<MDXTag name=\\"li\\" components={components} parentName=\\"ul\\">{\`item 2\`}</MDXTag>
+</MDXTag></MDXTag>"
+`;

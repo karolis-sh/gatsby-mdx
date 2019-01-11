@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import remove from 'unist-util-remove';
 import MDX from '@mdx-js/runtime';
+
+import remarkUnImporter from '../utils/remark-un-importer';
+import getScope from '../utils/get-scope';
 
 class MDXScopedRuntime extends React.Component {
   state = { error: undefined };
@@ -33,16 +35,20 @@ class MDXScopedRuntime extends React.Component {
       );
     }
 
+    const resolvedScope = props.allowedImports
+      ? getScope({
+          mdPlugins,
+          hastPlugins: props.hastPlugins,
+          mdx: props.children,
+          allowedImports: props.allowedImports,
+        })
+      : {};
+
     return (
       <MDX
         {...props}
-        scope={{ Layout: ({ children }) => children, ...scope }}
-        mdPlugins={[
-          () => tree => {
-            remove(tree, 'import');
-          },
-          ...mdPlugins,
-        ]}
+        scope={{ Layout: ({ children }) => children, ...scope, ...resolvedScope }}
+        mdPlugins={[[remarkUnImporter], ...mdPlugins]}
       />
     );
   }
@@ -51,6 +57,7 @@ class MDXScopedRuntime extends React.Component {
 MDXScopedRuntime.propTypes = {
   scope: PropTypes.shape({}).isRequired,
   mdPlugins: PropTypes.arrayOf(PropTypes.any).isRequired,
+  allowedImports: PropTypes.shape({}),
 };
 
 MDXScopedRuntime.defaultProps = {

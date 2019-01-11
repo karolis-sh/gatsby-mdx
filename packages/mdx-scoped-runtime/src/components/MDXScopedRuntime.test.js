@@ -46,15 +46,56 @@ it('should render the example', () => {
           Demo: () => <code>dem0</code>,
           // eslint-disable-next-line react/prop-types
           Layout: ({ children }) => <div id="layout">{children}</div>,
+          Calendar: () => <span>The-Calend@r</span>,
         }}
       >
         {`
-import Demo from '../ui/Demo';
 import Layout from '../ui/Layout';
+import { Calendar } from '../components';
+import Demo from 'wherever';
 
 export default Layout
 
 # Hello, world!
+
+<Calendar />
+
+<Demo />
+`}
+      </MDX>
+    )
+  ).toMatchSnapshot();
+});
+
+it('should render the example via {allowedImports}', () => {
+  expect(
+    parse(
+      <MDX
+        scope={{
+          // eslint-disable-next-line react/prop-types
+          Layout: ({ children }) => <div id="layout">{children}</div>,
+        }}
+        allowedImports={{
+          wherever: {
+            ImportDefault: () => <h1>This is a demo component</h1>,
+          },
+          '../components': {
+            Import: {
+              Calendar: () => <span>The-Calend@r</span>,
+            },
+          },
+        }}
+      >
+        {`
+import Layout from '../ui/Layout';
+import { Calendar } from '../components';
+import Demo from 'wherever';
+
+export default Layout
+
+# Hello, world!
+
+<Calendar />
 
 <Demo />
 `}

@@ -20,6 +20,8 @@ export default Layout
 ## wat?
 
 <List items={'howdy'.split('')} />
+
+<Hello name="Karolis" />
 `;
 
 export default class App extends React.Component {
@@ -34,7 +36,13 @@ export default class App extends React.Component {
           value={mdx}
           onChange={e => this.setState({ mdx: e.target.value })}
         />
-        <MDX components={components} scope={{ ...UI }}>
+        <MDX
+          components={components}
+          scope={{ Hello: UI.Hello }}
+          allowedImports={{
+            './ui': { Import: UI },
+          }}
+        >
           {mdx}
         </MDX>
       </div>
