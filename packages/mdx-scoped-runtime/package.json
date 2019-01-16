@@ -7,7 +7,7 @@
     "mdx-runtime",
     "scope"
   ],
-  "homepage": "https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime/README.md",
+  "homepage": "https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime#readme",
   "bugs": {
     "url": "https://github.com/buz-zard/gatsby-mdx/issues"
   },
