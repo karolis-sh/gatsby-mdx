@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/netlify-cms-widget-mdx/compare/netlify-cms-widget-mdx@0.2.1...netlify-cms-widget-mdx@0.3.0) (2019-01-16)
+
+### Bug Fixes
+
+- **docs:** homepage links ([5ece723](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/netlify-cms-widget-mdx/commit/5ece723))
+
+### Features
+
+- **allowedImports:** add ability to define scope with import validations ([ab4b5cd](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/netlify-cms-widget-mdx/commit/ab4b5cd))
+
 ## [0.2.1](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/netlify-cms-widget-mdx/compare/netlify-cms-widget-mdx@0.2.0...netlify-cms-widget-mdx@0.2.1) (2019-01-03)
 
 **Note:** Version bump only for package netlify-cms-widget-mdx

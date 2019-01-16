@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime/compare/mdx-scoped-runtime@0.4.4...mdx-scoped-runtime@0.5.0) (2019-01-16)
+
+### Bug Fixes
+
+- **docs:** homepage links ([5ece723](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime/commit/5ece723))
+
+### Features
+
+- **allowedImports:** add ability to define scope with import validations ([ab4b5cd](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime/commit/ab4b5cd))
+
 ## [0.4.4](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime/compare/mdx-scoped-runtime@0.4.3...mdx-scoped-runtime@0.4.4) (2019-01-03)
 
 ### Bug Fixes

@@ -1,6 +1,6 @@
 {
   "name": "mdx-scoped-runtime",
-  "version": "0.4.4",
+  "version": "0.5.0",
   "description": "@mdx-js/runtime wrapper that handles full MDX syntax",
   "keywords": [
     "mdx",
