@@ -38,13 +38,17 @@ CMS.registerWidget(
       ),
     },
     scope: {
-      Trend,
       Layout: props => (
         <div
           style={{ padding: '10px', border: '1px solid green', borderRadius: '5px' }}
           {...props}
         />
       ),
+    },
+    allowedImports: {
+      'react-trend': {
+        ImportDefault: Trend,
+      },
     },
     mdPlugins: [remarkEmojiPlugin],
   })

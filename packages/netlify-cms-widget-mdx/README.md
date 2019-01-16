@@ -21,7 +21,9 @@ import { MdxControl, MdxPreview } from 'netlify-cms-widget-mdx';
 CMS.registerWidget('mdx', MdxControl, MdxPreview);
 ```
 
-To setup scope, components and other props for [`@mdx-js/runtime`](https://www.npmjs.com/package/@mdx-js/runtime):
+To setup scope, components and other props for [`@mdx-js/runtime`](https://www.npmjs.com/package/@mdx-js/runtime).
+Also you can setup `allowedImports` for [mdx-scoped-runtime](https://www.npmjs.com/package/mdx-scoped-runtime)
+that will inspect the import path and apply the scope if path is correct.
 
 ```js
 import Trend from 'react-trend';
@@ -41,13 +43,17 @@ CMS.registerWidget(
       ),
     },
     scope: {
-      Trend,
       Layout: props => (
         <div
           style={{ padding: '10px', border: '1px solid green', borderRadius: '5px' }}
           {...props}
         />
       ),
+    },
+    allowedImports: {
+      'react-trend': {
+        ImportDefault: Trend,
+      },
     },
     mdPlugins: [remarkEmojiPlugin],
   })

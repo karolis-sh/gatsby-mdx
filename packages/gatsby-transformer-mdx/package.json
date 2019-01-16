@@ -8,7 +8,7 @@
     "gatsby-transformer",
     "mdx"
   ],
-  "homepage": "https://github.com/buz-zard/gatsby-mdx/blob/master/packages/gatsby-transformer-mdx/README.md",
+  "homepage": "https://github.com/buz-zard/gatsby-mdx/blob/master/packages/gatsby-transformer-mdx#readme",
   "bugs": {
     "url": "https://github.com/buz-zard/gatsby-mdx/issues"
   },

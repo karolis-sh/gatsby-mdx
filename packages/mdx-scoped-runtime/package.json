@@ -7,7 +7,7 @@
     "mdx-runtime",
     "scope"
   ],
-  "homepage": "https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime/README.md",
+  "homepage": "https://github.com/buz-zard/gatsby-mdx/blob/master/packages/mdx-scoped-runtime#readme",
   "bugs": {
     "url": "https://github.com/buz-zard/gatsby-mdx/issues"
   },
@@ -26,6 +26,7 @@
     "testRegex": "src/.+\\.test\\.js$"
   },
   "dependencies": {
+    "@babel/parser": "^7.2.3",
     "@mdx-js/mdx": "^0.15.7",
     "@mdx-js/runtime": "^0.15.7",
     "prop-types": "^15.6.2",
