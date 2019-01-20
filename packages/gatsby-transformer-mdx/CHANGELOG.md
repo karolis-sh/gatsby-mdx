@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/buz-zard/gatsby-mdx/tree/master/packages/gatsby-transformer-mdx/compare/gatsby-transformer-mdx@1.0.1...gatsby-transformer-mdx@1.0.2) (2019-01-20)
+
+### Bug Fixes
+
+- **docs:** wrong repo & git links ([131a1d2](https://github.com/buz-zard/gatsby-mdx/tree/master/packages/gatsby-transformer-mdx/commit/131a1d2))
+
 ## [1.0.1](https://github.com/buz-zard/gatsby-mdx/blob/master/packages/gatsby-transformer-mdx/compare/gatsby-transformer-mdx@1.0.0...gatsby-transformer-mdx@1.0.1) (2019-01-16)
 
 ### Bug Fixes
