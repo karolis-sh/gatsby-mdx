@@ -33,23 +33,6 @@
       "pre-push": "yarn lint"
     }
   },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  },
-  "devDependencies": {
-    "@k.sh/eslint-config": "^1.8.1",
-    "babel-eslint": "^10.0.1",
-    "cz-conventional-changelog": "^2.1.0",
-    "husky": "^1.3.0",
-    "lerna": "^3.8.0",
-    "lint-staged": "^8.1.0",
-    "npm-run-all": "^4.1.5",
-    "prettier": "^1.15.3",
-    "pretty-quick": "^1.8.0",
-    "sort-package-json": "^1.17.0"
-  },
   "lint-staged": {
     "**/package.json": [
       "sort-package-json",
@@ -62,5 +45,23 @@
     "*.{md,json}": [
       "pretty-quick --staged"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@k.sh/eslint-config": "^1.10.0",
+    "babel-eslint": "^10.0.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "husky": "^1.3.1",
+    "lerna": "^3.8.0",
+    "lint-staged": "^8.1.5",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.16.4",
+    "pretty-quick": "^1.10.0",
+    "sort-package-json": "^1.21.0"
   }
 }
