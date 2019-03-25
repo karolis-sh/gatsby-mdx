@@ -29,7 +29,7 @@
     "mdx-scoped-runtime": "^0.5.1",
     "netlify-cms-ui-default": "^2.1.1",
     "netlify-cms-widget-markdown": "^2.1.0",
-    "prop-types": "^15.6.2",
+    "prop-types": "^15.7.2",
     "react-emotion": "^9.2.5",
     "react-immutable-proptypes": "^2.1.0"
   },
