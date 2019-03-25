@@ -11,6 +11,17 @@ Error: Oh oh! something happened...</pre
 "
 `;
 
+exports[`should have proper test setup 1`] = `
+"<div>
+  <h1>Lore ipsum</h1>
+  <ul>
+    <li>Apples</li>
+    <li>Pears</li>
+  </ul>
+</div>
+"
+`;
+
 exports[`should render simple mdx 1`] = `
 "<div>
   <h1>Lore ipsum</h1>

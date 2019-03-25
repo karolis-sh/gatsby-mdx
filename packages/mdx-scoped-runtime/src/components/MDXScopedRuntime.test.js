@@ -2,6 +2,7 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import prettier from 'prettier';
 import { mount } from 'enzyme';
+import OriginalMDX from '@mdx-js/runtime';
 
 import MDX from './MDXScopedRuntime';
 
@@ -9,19 +10,31 @@ const format = html => prettier.format(html, { parser: 'html' });
 
 const parse = mdx => format(renderToString(mdx));
 
-it('should render simple mdx', () => {
+it('should have proper test setup', () => {
   expect(
     parse(
-      <MDX>
+      <OriginalMDX>
         {`
 # Lore ipsum
 
 - Apples
 - Pears
 `}
-      </MDX>
+      </OriginalMDX>
     )
   ).toMatchSnapshot();
+});
+
+it('should render simple mdx', () => {
+  const content = `
+# Lore ipsum
+
+- Apples
+- Pears
+`;
+  const result = parse(<MDX>{content}</MDX>);
+  expect(result).toMatchSnapshot();
+  expect(result).toEqual(parse(<OriginalMDX>{content}</OriginalMDX>));
 });
 
 it('should render simple mdx with layout', () => {
