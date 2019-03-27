@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/buz-zard/gatsby-mdx/tree/master/packages/mdx-scoped-runtime/compare/mdx-scoped-runtime@0.5.1...mdx-scoped-runtime@0.6.0) (2019-03-27)
+
+### Bug Fixes
+
+- update prop-types dependency ([bcff3dc](https://github.com/buz-zard/gatsby-mdx/tree/master/packages/mdx-scoped-runtime/commit/bcff3dc))
+
+### Features
+
+- add onError callback ([2a51bab](https://github.com/buz-zard/gatsby-mdx/tree/master/packages/mdx-scoped-runtime/commit/2a51bab))
+
 ## [0.5.1](https://github.com/buz-zard/gatsby-mdx/tree/master/packages/mdx-scoped-runtime/compare/mdx-scoped-runtime@0.5.0...mdx-scoped-runtime@0.5.1) (2019-01-20)
 
 ### Bug Fixes
