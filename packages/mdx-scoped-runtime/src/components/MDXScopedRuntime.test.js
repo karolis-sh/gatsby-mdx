@@ -124,3 +124,16 @@ it('should handle componentDidCatch', () => {
   expect(wrapper.text()).toContain(ERROR_MESSAGE);
   expect(format(wrapper.html())).toMatchSnapshot();
 });
+
+it('should call onError', () => {
+  const originalError = console.error;
+  console.error = jest.fn();
+
+  const onError = jest.fn();
+  const wrapper = mount(<MDX onError={onError}>{'<div'}</MDX>);
+
+  expect(onError).toHaveBeenCalled();
+  expect(format(wrapper.html())).toMatchSnapshot();
+
+  console.error = originalError;
+});

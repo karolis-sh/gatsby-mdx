@@ -98,7 +98,12 @@ const allowedImports = {
 };
 
 export default () => (
-  <MDX components={components} scope={scope} allowedImports={allowedImports}>
+  <MDX
+    components={components}
+    scope={scope}
+    allowedImports={allowedImports}
+    onError={error => console.log(error)}
+  >
     {mdx}
   </MDX>
 );
