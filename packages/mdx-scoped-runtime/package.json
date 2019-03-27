@@ -22,30 +22,33 @@
     "test": "jest src"
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "<rootDir>/src/__tests__/__setup__.js",
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/__tests__/__setup__.js"
+    ],
     "testRegex": "src/.+\\.test\\.js$"
   },
   "dependencies": {
     "@babel/parser": "^7.2.3",
     "@mdx-js/mdx": "^0.15.7",
     "@mdx-js/runtime": "^0.15.7",
-    "prop-types": "^15.6.2",
+    "prop-types": "^15.7.2",
     "unist-util-remove": "^1.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.0",
     "@babel/core": "^7.2.2",
     "@babel/plugin-proposal-class-properties": "^7.2.1",
+    "@babel/plugin-transform-runtime": "^7.3.4",
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/standalone": "^7.2.2",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^23.6.0",
-    "enzyme": "^3.8.0",
-    "enzyme-adapter-react-16": "^1.7.1",
-    "jest": "^23.6.0",
-    "jest-enzyme": "^7.0.1",
-    "prettier": "^1.15.3",
+    "babel-jest": "^24.5.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.0",
+    "jest": "^24.5.0",
+    "jest-enzyme": "^7.0.2",
+    "prettier": "^1.16.4",
     "react": "^16.6.3",
     "react-dom": "^16.7.0",
     "rimraf": "^2.6.2"

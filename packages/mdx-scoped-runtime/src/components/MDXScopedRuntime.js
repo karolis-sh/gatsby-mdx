@@ -17,12 +17,14 @@ class MDXScopedRuntime extends React.Component {
   }
 
   componentDidCatch(error) {
+    const { onError } = this.props;
     this.setState({ error });
+    onError(error);
   }
 
   render() {
     const { error } = this.state;
-    const { scope, mdPlugins, ...props } = this.props;
+    const { scope, mdPlugins, onError, ...props } = this.props;
 
     if (error) {
       return (
@@ -58,11 +60,13 @@ MDXScopedRuntime.propTypes = {
   scope: PropTypes.shape({}).isRequired,
   mdPlugins: PropTypes.arrayOf(PropTypes.any).isRequired,
   allowedImports: PropTypes.shape({}),
+  onError: PropTypes.func.isRequired,
 };
 
 MDXScopedRuntime.defaultProps = {
   scope: {},
   mdPlugins: [],
+  onError: () => undefined,
 };
 
 export default MDXScopedRuntime;

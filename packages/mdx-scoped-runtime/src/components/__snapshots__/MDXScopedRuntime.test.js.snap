@@ -1,5 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should call onError 1`] = `
+"<pre
+  class=\\"mdx-scoped-runtime__error\\"
+  style=\\"overflow-x: auto; background: rgba(255, 0, 0, 0.1);\\"
+>
+Invalid MDX:
+SyntaxError: Unexpected token (1:52)
+1 : &lt;MDXTag name=\\"wrapper\\"  components={components}&gt;&lt;div&lt;/MDXTag&gt;
+                                                        ^</pre
+>
+"
+`;
+
 exports[`should handle componentDidCatch 1`] = `
 "<pre
   class=\\"mdx-scoped-runtime__error\\"
@@ -8,6 +21,17 @@ exports[`should handle componentDidCatch 1`] = `
 Invalid MDX:
 Error: Oh oh! something happened...</pre
 >
+"
+`;
+
+exports[`should have proper test setup 1`] = `
+"<div>
+  <h1>Lore ipsum</h1>
+  <ul>
+    <li>Apples</li>
+    <li>Pears</li>
+  </ul>
+</div>
 "
 `;
 
