@@ -6,9 +6,13 @@ exports[`should call onError 1`] = `
   style=\\"overflow-x: auto; background: rgba(255, 0, 0, 0.1);\\"
 >
 Invalid MDX:
-SyntaxError: Unexpected token (1:52)
-1 : &lt;MDXTag name=\\"wrapper\\"  components={components}&gt;&lt;div&lt;/MDXTag&gt;
-                                                        ^</pre
+SyntaxError: Unexpected token (16:11)
+12 :     return &lt;MDXTag
+13 :              name=\\"wrapper\\"
+14 :              
+15 :              components={components}&gt;&lt;div
+16 :            &lt;/MDXTag&gt;
+                ^</pre
 >
 "
 `;

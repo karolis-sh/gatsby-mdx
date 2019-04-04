@@ -19,7 +19,7 @@
 		"remark-emoji": "^2.0.2"
 	},
 	"devDependencies": {
-		"@mdx-js/mdx": "^0.16.6",
+		"@mdx-js/mdx": "^0.20.3",
 		"gatsby-plugin-catch-links": "^2.0.13",
 		"gatsby-plugin-react-helmet": "^3.0.12",
 		"gatsby-transformer-mdx": "^1.0.3",
