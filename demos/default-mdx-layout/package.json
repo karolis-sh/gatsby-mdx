@@ -11,17 +11,17 @@
 		"try-build": "run-s clean build && serve public"
 	},
 	"dependencies": {
-		"gatsby": "^2.0.53",
-		"gatsby-plugin-catch-links": "^2.0.9",
+		"gatsby": "^2.3.12",
 		"prop-types": "^15.7.2",
-		"react": "^16.8.5",
-		"react-dom": "^16.8.5",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
 		"react-helmet": "^5.2.0"
 	},
 	"devDependencies": {
-		"@mdx-js/mdx": "^0.16.6",
-		"gatsby-plugin-react-helmet": "^3.0.2",
-		"gatsby-transformer-mdx": "file:../../packages/gatsby-transformer-mdx",
+		"@mdx-js/mdx": "^0.20.3",
+		"gatsby-plugin-catch-links": "^2.0.13",
+		"gatsby-plugin-react-helmet": "^3.0.12",
+		"gatsby-transformer-mdx": "^1.0.3",
 		"npm-run-all": "^4.1.5",
 		"rimraf": "^2.6.2",
 		"serve": "^10.1.1"
