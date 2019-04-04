@@ -1,5 +1,5 @@
 {
-  "packages": ["packages/*"],
+  "packages": ["packages/*", "demos/*"],
   "npmClient": "yarn",
   "useWorkspaces": true,
   "version": "independent",
@@ -13,6 +13,7 @@
     "**/*.md",
     "**/*.test.js",
     "**/*/__snapshots__/",
-    "packages/netlify-cms-widget-mdx/dev/"
+    "packages/netlify-cms-widget-mdx/dev/",
+    "demos/**/*"
   ]
 }

@@ -6,10 +6,10 @@
   "license": "MIT",
   "author": "Karolis Šarapnickis",
   "scripts": {
-    "develop": "webpack-dev-server --config ./webpack.config.js --mode development"
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
   },
   "dependencies": {
-    "mdx-scoped-runtime": "file:../../packages/mdx-scoped-runtime",
+    "mdx-scoped-runtime": "^0.6.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.5",
     "react-dom": "^16.8.5"
