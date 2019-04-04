@@ -11,8 +11,8 @@
   "dependencies": {
     "mdx-scoped-runtime": "^0.6.0",
     "prop-types": "^15.7.2",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
