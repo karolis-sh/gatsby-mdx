@@ -4,6 +4,7 @@ import MDX from 'mdx-scoped-runtime';
 import * as UI from './ui';
 
 const components = {
+  // eslint-disable-next-line react/prop-types
   h1: ({ children, ...props }) => (
     <h1 style={{ color: 'tomato' }} {...props}>
       {children}
@@ -36,6 +37,7 @@ export default class App extends React.Component {
           value={mdx}
           onChange={e => this.setState({ mdx: e.target.value })}
         />
+
         <MDX
           components={components}
           scope={{ Hello: UI.Hello }}

@@ -57,6 +57,7 @@ class MDXScopedRuntime extends React.Component {
 }
 
 MDXScopedRuntime.propTypes = {
+  children: PropTypes.string,
   scope: PropTypes.shape({}).isRequired,
   mdPlugins: PropTypes.arrayOf(PropTypes.any).isRequired,
   allowedImports: PropTypes.shape({}),

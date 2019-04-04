@@ -28,9 +28,9 @@
     "testRegex": "src/.+\\.test\\.js$"
   },
   "dependencies": {
-    "@babel/parser": "^7.2.3",
-    "@mdx-js/mdx": "^0.15.7",
-    "@mdx-js/runtime": "^0.15.7",
+    "@babel/parser": "7.2.3",
+    "@mdx-js/mdx": "^0.20.3",
+    "@mdx-js/runtime": "^0.20.3",
     "prop-types": "^15.7.2",
     "unist-util-remove": "^1.0.1"
   },

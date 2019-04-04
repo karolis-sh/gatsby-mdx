@@ -31,6 +31,7 @@ CMS.registerWidget(
   MdxControl,
   setupPreview({
     components: {
+      // eslint-disable-next-line react/prop-types
       h1: ({ children, ...props }) => (
         <h1 style={{ color: 'tomato' }} {...props}>
           {children}
