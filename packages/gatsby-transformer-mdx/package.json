@@ -34,7 +34,7 @@
     "slash": "^2.0.0"
   },
   "devDependencies": {
-    "jest": "^24.5.0"
+    "jest": "^24.7.1"
   },
   "peerDependencies": {
     "gatsby": "^2"
