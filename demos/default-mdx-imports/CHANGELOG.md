@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.4.0 (2019-04-04)
+
+### Bug Fixes
+
+- update prop-types dependency ([bcff3dc](https://github.com/buz-zard/gatsby-mdx/commit/bcff3dc))
+
+### Features
+
+- **allowedImports:** add ability to define scope with import validations ([ab4b5cd](https://github.com/buz-zard/gatsby-mdx/commit/ab4b5cd))
+- **mdx-js:** update @mdx-js/\*[@0](https://github.com/0).20.3 ([99a3166](https://github.com/buz-zard/gatsby-mdx/commit/99a3166))
+
 # 0.3.0 (2019-03-27)
 
 ### Bug Fixes

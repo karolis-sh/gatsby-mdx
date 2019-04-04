@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/buz-zard/gatsby-mdx/tree/master/packages/mdx-scoped-runtime/compare/mdx-scoped-runtime@0.6.0...mdx-scoped-runtime@0.7.0) (2019-04-04)
+
+### Features
+
+- **mdx-js:** update @mdx-js/\*[@0](https://github.com/0).20.3 ([99a3166](https://github.com/buz-zard/gatsby-mdx/tree/master/packages/mdx-scoped-runtime/commit/99a3166))
+
 # [0.6.0](https://github.com/buz-zard/gatsby-mdx/tree/master/packages/mdx-scoped-runtime/compare/mdx-scoped-runtime@0.5.1...mdx-scoped-runtime@0.6.0) (2019-03-27)
 
 ### Bug Fixes
