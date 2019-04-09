@@ -4,7 +4,7 @@ const resolveImportStatement = require('./resolve-import-statement');
 const LAYOUT_COMPONENT_NAME = '___DefaultLayout';
 
 module.exports = options => (tree, file) => {
-  const filePath = file.history.length ? file.history.length[0] : undefined;
+  const filePath = file.history.length ? file.history[0] : undefined;
 
   if (options.layout) {
     if (!tree.children.find(item => item.type === 'export')) {
