@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/buz-zard/gatsby-mdx/tree/master/packages/gatsby-transformer-mdx/compare/gatsby-transformer-mdx@1.1.0...gatsby-transformer-mdx@1.1.1) (2019-04-09)
+
+### Bug Fixes
+
+- use relative path for default layout component ([06de9ad](https://github.com/buz-zard/gatsby-mdx/tree/master/packages/gatsby-transformer-mdx/commit/06de9ad))
+
 # [1.1.0](https://github.com/buz-zard/gatsby-mdx/tree/master/packages/gatsby-transformer-mdx/compare/gatsby-transformer-mdx@1.0.3...gatsby-transformer-mdx@1.1.0) (2019-04-04)
 
 ### Features
