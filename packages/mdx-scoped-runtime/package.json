@@ -25,6 +25,9 @@
     "setupFilesAfterEnv": [
       "<rootDir>/src/__tests__/__setup__.js"
     ],
+    "snapshotSerializers": [
+      "jest-serializer-html"
+    ],
     "testRegex": "src/.+\\.test\\.js$"
   },
   "dependencies": {
@@ -48,6 +51,7 @@
     "enzyme-adapter-react-16": "^1.11.2",
     "jest": "^24.7.1",
     "jest-enzyme": "^7.0.2",
+    "jest-serializer-html": "^6.0.0",
     "prettier": "^1.16.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
