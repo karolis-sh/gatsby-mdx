@@ -1,79 +1,113 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should call onError 1`] = `
-"<pre
-  class=\\"mdx-scoped-runtime__error\\"
-  style=\\"overflow-x: auto; background: rgba(255, 0, 0, 0.1);\\"
+
+<pre class="mdx-scoped-runtime__error"
+     style="overflow-x: auto; background: rgba(255, 0, 0, 0.1);"
 >
-Invalid MDX:
+  Invalid MDX:
 SyntaxError: Unexpected token (16:11)
 12 :     return &lt;MDXTag
-13 :              name=\\"wrapper\\"
+13 :              name="wrapper"
 14 :              
 15 :              components={components}&gt;&lt;div
 16 :            &lt;/MDXTag&gt;
-                ^</pre
->
-"
+                ^
+</pre>
+
 `;
 
 exports[`should handle componentDidCatch 1`] = `
-"<pre
-  class=\\"mdx-scoped-runtime__error\\"
-  style=\\"overflow-x: auto; background: rgba(255, 0, 0, 0.1);\\"
+
+<pre class="mdx-scoped-runtime__error"
+     style="overflow-x: auto; background: rgba(255, 0, 0, 0.1);"
 >
-Invalid MDX:
-Error: Oh oh! something happened...</pre
->
-"
+  Invalid MDX:
+Error: Oh oh! something happened...
+</pre>
+
 `;
 
 exports[`should have proper test setup 1`] = `
-"<div>
-  <h1>Lore ipsum</h1>
+
+<div>
+  <h1>
+    Lore ipsum
+  </h1>
   <ul>
-    <li>Apples</li>
-    <li>Pears</li>
+    <li>
+      Apples
+    </li>
+    <li>
+      Pears
+    </li>
   </ul>
 </div>
-"
+
 `;
 
 exports[`should render simple mdx 1`] = `
-"<div>
-  <h1>Lore ipsum</h1>
+
+<div>
+  <h1>
+    Lore ipsum
+  </h1>
   <ul>
-    <li>Apples</li>
-    <li>Pears</li>
+    <li>
+      Apples
+    </li>
+    <li>
+      Pears
+    </li>
   </ul>
 </div>
-"
+
 `;
 
 exports[`should render simple mdx with layout 1`] = `
-"<div id=\\"layout\\">
-  <div><h1>Hi</h1></div>
+
+<div id="layout">
+  <div>
+    <h1>
+      Hi
+    </h1>
+  </div>
 </div>
-"
+
 `;
 
 exports[`should render the example 1`] = `
-"<div id=\\"layout\\">
+
+<div id="layout">
   <div>
-    <h1>Hello, world!</h1>
-    <span>The-Calend@r</span><code>dem0</code>
+    <h1>
+      Hello, world!
+    </h1>
+    <span>
+      The-Calend@r
+    </span>
+    <code>
+      dem0
+    </code>
   </div>
 </div>
-"
+
 `;
 
 exports[`should render the example via {allowedImports} 1`] = `
-"<div id=\\"layout\\">
+
+<div id="layout">
   <div>
-    <h1>Hello, world!</h1>
-    <span>The-Calend@r</span>
-    <h1>This is a demo component</h1>
+    <h1>
+      Hello, world!
+    </h1>
+    <span>
+      The-Calend@r
+    </span>
+    <h1>
+      This is a demo component
+    </h1>
   </div>
 </div>
-"
+
 `;
