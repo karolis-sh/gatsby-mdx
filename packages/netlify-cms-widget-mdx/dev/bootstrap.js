@@ -19,7 +19,7 @@ Hello, world
       content: `---
 title: 2. Markdown with mdx layout syntax
 ---
-export default ({children}) => <div style={{ background: 'rgba(100, 100, 100, .1)' }}>children</div>
+export default ({children}) => <div style={{ background: 'rgba(100, 100, 100, .1)' }}>{children}</div>
 
 # I Am a Title in Markdown
 

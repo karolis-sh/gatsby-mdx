@@ -20,18 +20,13 @@
   "scripts": {
     "build": "babel src --out-dir lib --source-maps",
     "clean": "rimraf lib",
-    "start": "webpack-serve --config webpack.dev.config.js --log-level error --open-path '/#/collections/post'"
+    "start": "webpack-dev-server --config webpack.dev.config.js"
   },
   "dependencies": {
-    "emotion": "^9.2.6",
-    "immutable": "^3.7.6",
-    "lodash": "^4.17.10",
     "mdx-scoped-runtime": "^0.7.1",
-    "netlify-cms-ui-default": "^2.6.2",
-    "netlify-cms-widget-markdown": "^2.4.2",
-    "prop-types": "^15.7.2",
-    "react-emotion": "^9.2.5",
-    "react-immutable-proptypes": "^2.1.0"
+    "netlify-cms-ui-default": "^2.6.4",
+    "netlify-cms-widget-markdown": "^2.5.1",
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.0",
@@ -41,16 +36,16 @@
     "babel-loader": "^8.0.4",
     "css-loader": "^2.1.0",
     "html-webpack-plugin": "^3.2.0",
-    "netlify-cms": "^2.9.0",
+    "netlify-cms": "^2.9.7",
     "react": "^16.8.6",
-    "react-trend": "^1.2.4",
+    "react-trend": "1.2.5",
     "remark-emoji": "^2.0.2",
-    "rimraf": "^2.6.2",
+    "rimraf": "^2.6.3",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.1",
     "webpack": "^4.28.2",
     "webpack-cli": "^3.1.2",
-    "webpack-serve": "^2.0.3"
+    "webpack-dev-server": "^3.7.2"
   },
   "peerDependencies": {
     "netlify-cms": "^2.9",

@@ -121,6 +121,7 @@ it('should handle componentDidCatch', () => {
   const ERROR_MESSAGE = 'Oh oh! something happened...';
   const wrapper = mount(<MDX># Oh boy</MDX>);
   wrapper.instance().componentDidCatch(new Error(ERROR_MESSAGE));
+  wrapper.update();
   expect(wrapper.text()).toContain(ERROR_MESSAGE);
   expect(format(wrapper.html())).toMatchSnapshot();
 });
