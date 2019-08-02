@@ -20,7 +20,7 @@
   "scripts": {
     "build": "babel src --out-dir lib --source-maps",
     "clean": "rimraf lib",
-    "develop": "webpack-dev-server --config webpack.dev.config.js"
+    "start": "webpack-dev-server --config webpack.dev.config.js"
   },
   "dependencies": {
     "mdx-scoped-runtime": "^0.7.1",
@@ -36,7 +36,7 @@
     "babel-loader": "^8.0.4",
     "css-loader": "^2.1.0",
     "html-webpack-plugin": "^3.2.0",
-    "netlify-cms": "^2.9.0",
+    "netlify-cms": "^2.9.7",
     "react": "^16.8.6",
     "react-trend": "1.2.5",
     "remark-emoji": "^2.0.2",
