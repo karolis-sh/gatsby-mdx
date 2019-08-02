@@ -23,15 +23,10 @@
     "develop": "webpack-dev-server --config webpack.dev.config.js"
   },
   "dependencies": {
-    "emotion": "^9.2.6",
-    "immutable": "^3.7.6",
-    "lodash": "^4.17.10",
     "mdx-scoped-runtime": "^0.7.1",
     "netlify-cms-ui-default": "^2.6.2",
     "netlify-cms-widget-markdown": "^2.4.2",
-    "prop-types": "^15.7.2",
-    "react-emotion": "^9.2.5",
-    "react-immutable-proptypes": "^2.1.0"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.0",
@@ -43,7 +38,7 @@
     "html-webpack-plugin": "^3.2.0",
     "netlify-cms": "^2.9.0",
     "react": "^16.8.6",
-    "react-trend": "^1.2.4",
+    "react-trend": "1.2.5",
     "remark-emoji": "^2.0.2",
     "rimraf": "^2.6.3",
     "source-map-loader": "^0.2.4",
