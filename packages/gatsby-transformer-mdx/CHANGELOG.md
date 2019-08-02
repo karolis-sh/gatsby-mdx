@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/buz-zard/gatsby-mdx/tree/master/packages/gatsby-transformer-mdx/compare/gatsby-transformer-mdx@1.1.1...gatsby-transformer-mdx@1.1.2) (2019-08-02)
+
+### Bug Fixes
+
+- **dependency:** swap gatsby-plugin-page-creator with gatsby-page-utils ([5fbe833](https://github.com/buz-zard/gatsby-mdx/tree/master/packages/gatsby-transformer-mdx/commit/5fbe833))
+
 ## [1.1.1](https://github.com/buz-zard/gatsby-mdx/tree/master/packages/gatsby-transformer-mdx/compare/gatsby-transformer-mdx@1.1.0...gatsby-transformer-mdx@1.1.1) (2019-04-09)
 
 ### Bug Fixes

@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/buz-zard/gatsby-mdx/tree/master/packages/netlify-cms-widget-mdx/compare/netlify-cms-widget-mdx@0.4.0...netlify-cms-widget-mdx@0.4.1) (2019-08-02)
+
+### Bug Fixes
+
+- dependency ([906ff3b](https://github.com/buz-zard/gatsby-mdx/tree/master/packages/netlify-cms-widget-mdx/commit/906ff3b))
+- remove redundant lefover dependencies ([04e5a9f](https://github.com/buz-zard/gatsby-mdx/tree/master/packages/netlify-cms-widget-mdx/commit/04e5a9f))
+
 # [0.4.0](https://github.com/buz-zard/gatsby-mdx/tree/master/packages/netlify-cms-widget-mdx/compare/netlify-cms-widget-mdx@0.3.3...netlify-cms-widget-mdx@0.4.0) (2019-04-13)
 
 ### Features
