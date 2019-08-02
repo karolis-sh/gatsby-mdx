@@ -11,11 +11,11 @@
 		"try-build": "run-s clean build && serve public"
 	},
 	"dependencies": {
-		"gatsby": "^2.3.12",
+		"gatsby": "^2.13.50",
 		"prop-types": "^15.7.2",
 		"react": "^16.8.6",
 		"react-dom": "^16.8.6",
-		"react-helmet": "^5.2.0",
+		"react-helmet": "^5.2.1",
 		"react-live-clock": "^3.0.0"
 	},
 	"devDependencies": {
