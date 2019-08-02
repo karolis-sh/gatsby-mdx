@@ -20,7 +20,7 @@
   "scripts": {
     "build": "babel src --out-dir lib --source-maps",
     "clean": "rimraf lib",
-    "start": "webpack-serve --config webpack.dev.config.js --log-level error --open-path '/#/collections/post'"
+    "develop": "webpack-dev-server --config webpack.dev.config.js"
   },
   "dependencies": {
     "emotion": "^9.2.6",
@@ -50,7 +50,7 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.28.2",
     "webpack-cli": "^3.1.2",
-    "webpack-serve": "^2.0.3"
+    "webpack-dev-server": "^3.7.2"
   },
   "peerDependencies": {
     "netlify-cms": "^2.9",
