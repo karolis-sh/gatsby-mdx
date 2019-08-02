@@ -24,8 +24,8 @@
   },
   "dependencies": {
     "mdx-scoped-runtime": "^0.7.1",
-    "netlify-cms-ui-default": "^2.6.2",
-    "netlify-cms-widget-markdown": "^2.4.2",
+    "netlify-cms-ui-default": "^2.6.4",
+    "netlify-cms-widget-markdown": "^2.5.1",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
