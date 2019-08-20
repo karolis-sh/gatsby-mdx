@@ -73,6 +73,35 @@ fields:
     widget: mdx
 ```
 
+### Integrating with GatsbyJS
+
+GatsbyJS uses [gatsby-plugin-netlify-cms](https://www.npmjs.com/package/gatsby-plugin-netlify-cms) to generate it's `/admin/index.html` file, which is responsible for bootstrapping the Netlify CMS. You can register components using the plugin config parameters in `gatsby-config.js`:
+
+```js
+{
+  resolve: `gatsby-plugin-netlify-cms`,
+  options: {
+    /**
+     * One convention is to place your Netlify CMS customization code in a
+     * `src/cms` directory.
+     */
+    modulePath: `${__dirname}/src/admin/cms.js`,
+  },
+},
+```
+
+Then you can create a component that registers any widgets in `/src/admin/cms.js`:
+
+```js
+import CMS from "netlify-cms-app"
+import { MdxControl, MdxPreview } from "netlify-cms-widget-mdx"
+
+console.log("Registering MDX", MdxControl)
+
+CMS.registerWidget("mdx", MdxControl, MdxPreview)
+```
+
+
 ## License
 
 MIT
