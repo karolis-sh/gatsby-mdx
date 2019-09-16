@@ -127,6 +127,7 @@ it('should handle componentDidCatch', () => {
 });
 
 it('should call onError', () => {
+  /* eslint-disable no-console */
   const originalError = console.error;
   console.error = jest.fn();
 
@@ -135,6 +136,6 @@ it('should call onError', () => {
 
   expect(onError).toHaveBeenCalled();
   expect(format(wrapper.html())).toMatchSnapshot();
-
   console.error = originalError;
+  /* eslint-enable */
 });
