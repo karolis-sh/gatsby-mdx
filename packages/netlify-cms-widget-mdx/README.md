@@ -79,13 +79,13 @@ MIT
 
 ## Support
 
-For help with this widget, open an [issue](https://github.com/buz-zard/gatsby-mdx)
+For help with this widget, open an [issue](https://github.com/karolis-sh/gatsby-mdx)
 or ask the Netlify CMS community in [Gitter](https://gitter.im/netlify/netlifycms).
 
 [version-badge]: https://badge.fury.io/js/netlify-cms-widget-mdx.svg
 [version]: https://www.npmjs.com/package/netlify-cms-widget-mdx
-[build-badge]: https://travis-ci.org/buz-zard/gatsby-mdx.svg?branch=master
-[build]: https://travis-ci.org/buz-zard/gatsby-mdx
+[build-badge]: https://travis-ci.org/karolis-sh/gatsby-mdx.svg?branch=master
+[build]: https://travis-ci.org/karolis-sh/gatsby-mdx
 [license-badge]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license]: https://opensource.org/licenses/MIT
 [module-formats-badge]: https://img.shields.io/badge/module%20formats-cjs-green.svg

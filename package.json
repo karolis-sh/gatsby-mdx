@@ -2,10 +2,10 @@
   "name": "gatsby-mdx",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://github.com/buz-zard/gatsby-mdx#readme",
+  "homepage": "https://github.com/karolis-sh/gatsby-mdx#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/buz-zard/gatsby-mdx.git"
+    "url": "git+https://github.com/karolis-sh/gatsby-mdx.git"
   },
   "license": "MIT",
   "author": "Karolis Šarapnickis",
