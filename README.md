@@ -23,8 +23,8 @@ Widget for mdx files in Netlify CMS.
 
 MIT
 
-[build-badge]: https://travis-ci.org/buz-zard/gatsby-mdx.svg?branch=master
-[build]: https://travis-ci.org/buz-zard/gatsby-mdx
+[build-badge]: https://travis-ci.org/karolis-sh/gatsby-mdx.svg?branch=master
+[build]: https://travis-ci.org/karolis-sh/gatsby-mdx
 [license-badge]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license]: https://opensource.org/licenses/MIT
 [code-style-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg

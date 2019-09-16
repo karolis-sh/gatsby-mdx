@@ -7,11 +7,11 @@
     "mdx-runtime",
     "scope"
   ],
-  "homepage": "https://github.com/buz-zard/gatsby-mdx/tree/master/packages/mdx-scoped-runtime#readme",
+  "homepage": "https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/mdx-scoped-runtime#readme",
   "bugs": {
-    "url": "https://github.com/buz-zard/gatsby-mdx/issues"
+    "url": "https://github.com/karolis-sh/gatsby-mdx/issues"
   },
-  "repository": "https://github.com/buz-zard/gatsby-mdx/tree/master/packages/mdx-scoped-runtime",
+  "repository": "https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/mdx-scoped-runtime",
   "license": "MIT",
   "author": "Karolis Šarapnickis",
   "main": "lib/index.js",
@@ -46,11 +46,11 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/standalone": "^7.2.2",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^24.7.1",
+    "babel-jest": "^24.9.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
-    "jest": "^24.8.0",
-    "jest-enzyme": "^7.0.2",
+    "jest": "^24.9.0",
+    "jest-enzyme": "^7.1.1",
     "jest-serializer-html": "^7.0.0",
     "prettier": "^1.18.2",
     "react": "^16.8.6",

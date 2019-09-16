@@ -8,11 +8,11 @@
     "gatsby-transformer",
     "mdx"
   ],
-  "homepage": "https://github.com/buz-zard/gatsby-mdx/tree/master/packages/gatsby-transformer-mdx#readme",
+  "homepage": "https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/gatsby-transformer-mdx#readme",
   "bugs": {
-    "url": "https://github.com/buz-zard/gatsby-mdx/issues"
+    "url": "https://github.com/karolis-sh/gatsby-mdx/issues"
   },
-  "repository": "https://github.com/buz-zard/gatsby-mdx/tree/master/packages/gatsby-transformer-mdx",
+  "repository": "https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/gatsby-transformer-mdx",
   "license": "MIT",
   "author": "Karolis Šarapnickis",
   "main": "index.js",
@@ -33,7 +33,7 @@
     "slash": "^2.0.0"
   },
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^24.9.0"
   },
   "peerDependencies": {
     "gatsby": "^2"

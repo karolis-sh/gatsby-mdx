@@ -9,11 +9,11 @@
     "netlify-cms-widget",
     "widget"
   ],
-  "homepage": "https://github.com/buz-zard/gatsby-mdx/tree/master/packages/netlify-cms-widget-mdx#readme",
+  "homepage": "https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/netlify-cms-widget-mdx#readme",
   "bugs": {
-    "url": "https://github.com/buz-zard/gatsby-mdx/issues"
+    "url": "https://github.com/karolis-sh/gatsby-mdx/issues"
   },
-  "repository": "https://github.com/buz-zard/gatsby-mdx/tree/master/packages/netlify-cms-widget-mdx",
+  "repository": "https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/netlify-cms-widget-mdx",
   "license": "MIT",
   "author": "Karolis Šarapnickis",
   "main": "lib/index.js",
