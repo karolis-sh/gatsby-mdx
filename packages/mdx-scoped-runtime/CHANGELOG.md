@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.3](https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/mdx-scoped-runtime/compare/mdx-scoped-runtime@0.7.2...mdx-scoped-runtime@0.7.3) (2019-09-17)
+
+### Bug Fixes
+
+- handle syntax errors in scope parsing ([4067859](https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/mdx-scoped-runtime/commit/4067859))
+
 ## [0.7.2](https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/mdx-scoped-runtime/compare/mdx-scoped-runtime@0.7.1...mdx-scoped-runtime@0.7.2) (2019-08-02)
 
 **Note:** Version bump only for package mdx-scoped-runtime
