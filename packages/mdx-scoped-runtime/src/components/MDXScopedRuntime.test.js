@@ -117,6 +117,30 @@ export default Layout
   ).toMatchSnapshot();
 });
 
+it('should handle invalid import syntax', () => {
+  expect(
+    parse(
+      <MDX
+        allowedImports={{
+          '../components': {
+            Import: {
+              Calendar: () => <span>The-Calend@r</span>,
+            },
+          },
+        }}
+      >
+        {`
+import { Calendar } from '../components
+
+# Hello, world!
+
+<Calendar />
+`}
+      </MDX>
+    )
+  ).toMatchSnapshot();
+});
+
 it('should handle componentDidCatch', () => {
   const ERROR_MESSAGE = 'Oh oh! something happened...';
   const wrapper = mount(<MDX># Oh boy</MDX>);

@@ -5,6 +5,23 @@ import MDX from '@mdx-js/runtime';
 import remarkUnImporter from '../utils/remark-un-importer';
 import getScope from '../utils/get-scope';
 
+function ErrorRenderer({ children }) {
+  return (
+    <pre
+      className="mdx-scoped-runtime__error"
+      style={{ overflowX: 'auto', background: 'rgba(255, 0, 0, .1)' }}
+    >
+      {`Invalid MDX:\n${children.toString()}`}
+    </pre>
+  );
+}
+
+ErrorRenderer.propTypes = {
+  children: PropTypes.shape({
+    toString: PropTypes.func.isRequired,
+  }).isRequired,
+};
+
 class MDXScopedRuntime extends React.Component {
   state = { error: undefined };
 
@@ -16,10 +33,14 @@ class MDXScopedRuntime extends React.Component {
     }
   }
 
-  componentDidCatch(error) {
+  onError = error => {
     const { onError } = this.props;
     this.setState({ error });
     onError(error);
+  };
+
+  componentDidCatch(error) {
+    this.onError(error);
   }
 
   render() {
@@ -27,32 +48,30 @@ class MDXScopedRuntime extends React.Component {
     const { scope, mdPlugins, onError, ...props } = this.props;
 
     if (error) {
-      return (
-        <pre
-          className="mdx-scoped-runtime__error"
-          style={{ overflowX: 'auto', background: 'rgba(255, 0, 0, .1)' }}
-        >
-          {`Invalid MDX:\n${error.toString()}`}
-        </pre>
-      );
+      return <ErrorRenderer>{error}</ErrorRenderer>;
     }
 
-    const resolvedScope = props.allowedImports
-      ? getScope({
-          mdPlugins,
-          hastPlugins: props.hastPlugins,
-          mdx: props.children,
-          allowedImports: props.allowedImports,
-        })
-      : {};
+    try {
+      const resolvedScope = props.allowedImports
+        ? getScope({
+            mdPlugins,
+            hastPlugins: props.hastPlugins,
+            mdx: props.children,
+            allowedImports: props.allowedImports,
+          })
+        : {};
 
-    return (
-      <MDX
-        {...props}
-        scope={{ Layout: ({ children }) => children, ...scope, ...resolvedScope }}
-        mdPlugins={[[remarkUnImporter], ...mdPlugins]}
-      />
-    );
+      return (
+        <MDX
+          {...props}
+          scope={{ Layout: ({ children }) => children, ...scope, ...resolvedScope }}
+          mdPlugins={[[remarkUnImporter], ...mdPlugins]}
+        />
+      );
+    } catch (err) {
+      this.onError(err);
+      return <ErrorRenderer>{err}</ErrorRenderer>;
+    }
   }
 }
 

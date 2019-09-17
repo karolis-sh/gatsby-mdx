@@ -24,6 +24,16 @@ Error: Oh oh! something happened...
 </pre>
 `;
 
+exports[`should handle invalid import syntax 1`] = `
+<pre class="mdx-scoped-runtime__error"
+     style="overflow-x:auto;background:rgba(255, 0, 0, .1)"
+     data-reactroot
+>
+  Invalid MDX:
+SyntaxError: Unterminated string constant (1:25)
+</pre>
+`;
+
 exports[`should have proper test setup 1`] = `
 <div>
   <h1>
