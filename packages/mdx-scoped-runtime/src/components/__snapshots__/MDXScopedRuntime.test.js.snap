@@ -34,6 +34,14 @@ SyntaxError: Unterminated string constant (1:25)
 </pre>
 `;
 
+exports[`should handle object spreading 1`] = `
+<div>
+  <div class="test">
+    Test
+  </div>
+</div>
+`;
+
 exports[`should have proper test setup 1`] = `
 <div>
   <h1>
