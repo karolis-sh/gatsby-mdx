@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import MDX from '@mdx-js/runtime';
 
 import remarkUnImporter from '../utils/remark-un-importer';
 import getScope from '../utils/get-scope';
+import MDX from './MDX';
 
 function ErrorRenderer({ children }) {
   return (
@@ -80,6 +80,7 @@ MDXScopedRuntime.propTypes = {
   mdPlugins: PropTypes.arrayOf(PropTypes.any).isRequired,
   allowedImports: PropTypes.shape({}),
   onError: PropTypes.func.isRequired,
+  children: PropTypes.node,
 };
 
 MDXScopedRuntime.defaultProps = {

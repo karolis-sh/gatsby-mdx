@@ -2,7 +2,7 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import prettier from 'prettier';
 import { mount } from 'enzyme';
-import OriginalMDX from '@mdx-js/runtime';
+import OriginalMDX from './MDX';
 
 import MDX from './MDXScopedRuntime';
 
@@ -162,4 +162,8 @@ it('should call onError', () => {
   expect(format(wrapper.html())).toMatchSnapshot();
   console.error = originalError;
   /* eslint-enable */
+});
+
+it('should handle object spreading', () => {
+  expect(parse(<MDX>{'<div className="test" {...{children: "Test"}} />'}</MDX>)).toMatchSnapshot();
 });

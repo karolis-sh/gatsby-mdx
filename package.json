@@ -16,6 +16,7 @@
   "scripts": {
     "build": "lerna run build --ignore @demos/*",
     "clean": "lerna run clean",
+    "clean-yarn": "yarn && lerna clean --yes && yarn && yarn clean",
     "format": "run-p format:*",
     "format:package-json": "sort-package-json package.json packages/*/package.json",
     "format:prettier": "prettier --write '**/*.*'",
