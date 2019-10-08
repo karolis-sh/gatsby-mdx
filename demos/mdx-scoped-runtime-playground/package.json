@@ -1,6 +1,6 @@
 {
   "name": "@demos/mdx-scoped-runtime-playground",
-  "version": "0.13.0",
+  "version": "0.14.0",
   "private": true,
   "description": "",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "start": "webpack-dev-server --config ./webpack.config.js --mode development --https"
   },
   "dependencies": {
-    "mdx-scoped-runtime": "^0.7.3",
+    "mdx-scoped-runtime": "^0.7.4",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"

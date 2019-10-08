@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.4](https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/mdx-scoped-runtime/compare/mdx-scoped-runtime@0.7.3...mdx-scoped-runtime@0.7.4) (2019-10-08)
+
+### Bug Fixes
+
+- fix object spreading on html tag ([ec40514](https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/mdx-scoped-runtime/commit/ec40514))
+
 ## [0.7.3](https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/mdx-scoped-runtime/compare/mdx-scoped-runtime@0.7.2...mdx-scoped-runtime@0.7.3) (2019-09-17)
 
 ### Bug Fixes
