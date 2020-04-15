@@ -18,8 +18,8 @@ function Layout({ children, title }) {
           }
         }
       `}
-      render={data => (
-        <React.Fragment>
+      render={(data) => (
+        <>
           <Helmet
             title={title || data.site.siteMetadata.title}
             meta={[
@@ -40,7 +40,7 @@ function Layout({ children, title }) {
           >
             {children}
           </div>
-        </React.Fragment>
+        </>
       )}
     />
   );

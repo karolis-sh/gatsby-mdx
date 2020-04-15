@@ -33,7 +33,7 @@ class MDXScopedRuntime extends React.Component {
     }
   }
 
-  onError = error => {
+  onError = (error) => {
     const { onError } = this.props;
     this.setState({ error });
     onError(error);

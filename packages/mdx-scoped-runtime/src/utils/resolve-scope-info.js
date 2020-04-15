@@ -1,6 +1,6 @@
 import { parse } from '@babel/parser';
 
-export default code => {
+export default (code) => {
   const scope = {};
   const result = {};
 
@@ -26,12 +26,12 @@ export default code => {
   };
 
   parse(Array.isArray(code) ? code.join('\n') : code, { sourceType: 'module' })
-    .program.body.filter(item => item.type === 'ImportDeclaration')
-    .forEach(item => {
+    .program.body.filter((item) => item.type === 'ImportDeclaration')
+    .forEach((item) => {
       const key = item.source.value;
       if (!result[key]) result[key] = {};
       if (!result[key].Import) result[key].Import = {};
-      item.specifiers.forEach(specifier => {
+      item.specifiers.forEach((specifier) => {
         // eslint-disable-next-line prefer-destructuring
         const name = specifier.local.name;
         if (specifier.type === 'ImportDefaultSpecifier') {
@@ -50,7 +50,7 @@ export default code => {
       });
     });
 
-  Object.keys(result).forEach(key => {
+  Object.keys(result).forEach((key) => {
     if (!Object.values(result[key].Import).length) {
       delete result[key].Import;
     }

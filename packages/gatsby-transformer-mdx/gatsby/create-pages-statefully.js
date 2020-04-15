@@ -17,12 +17,12 @@ module.exports = async ({ store, actions }, pluginOptions) => {
   const pageCreator = new PageCreator({ pagesDirectory, store, createPage, deletePage });
 
   const files = await glob(pagesGlob, { cwd: pagesPath });
-  await Promise.all(files.map(file => pageCreator.create(file)));
+  await Promise.all(files.map((file) => pageCreator.create(file)));
 
   await watchDirectory(
     pagesPath,
     pagesGlob,
-    addedPath => pageCreator.create(addedPath),
-    removedPath => pageCreator.remove(removedPath)
+    (addedPath) => pageCreator.create(addedPath),
+    (removedPath) => pageCreator.remove(removedPath)
   );
 };

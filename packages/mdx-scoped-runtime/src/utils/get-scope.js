@@ -13,7 +13,7 @@ export default ({ mdPlugins = [], hastPlugins = [], mdx, allowedImports }) => {
       [
         remarkUnImporter,
         {
-          reporter: value => {
+          reporter: (value) => {
             scope = resolveScope(allowedImports, resolveScopeInfo(value));
           },
         },

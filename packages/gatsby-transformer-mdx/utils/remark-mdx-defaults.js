@@ -3,11 +3,11 @@ const resolveImportStatement = require('./resolve-import-statement');
 
 const LAYOUT_COMPONENT_NAME = '___DefaultLayout';
 
-module.exports = options => (tree, file) => {
+module.exports = (options) => (tree, file) => {
   const filePath = file.history.length ? file.history[0] : undefined;
 
   if (options.layout) {
-    if (!tree.children.find(item => item.type === 'export')) {
+    if (!tree.children.find((item) => item.type === 'export')) {
       tree.children.push({
         type: 'import',
         value: `import ${LAYOUT_COMPONENT_NAME} from "${resolvePath(filePath, options.layout)}";`,
@@ -22,7 +22,7 @@ module.exports = options => (tree, file) => {
 
   if (options.imports) {
     const imports = Array.isArray(options.imports) ? options.imports : [options.imports];
-    imports.forEach(importStatement => {
+    imports.forEach((importStatement) => {
       tree.children.unshift({
         type: 'import',
         value: resolveImportStatement(importStatement),
