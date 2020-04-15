@@ -21,7 +21,10 @@ const config = {
       folder: '_posts',
       extension: 'mdx',
       format: 'frontmatter',
-      fields: [{ name: 'title', label: 'Title' }, { name: 'body', label: 'Body', widget: 'mdx' }],
+      fields: [
+        { name: 'title', label: 'Title' },
+        { name: 'body', label: 'Body', widget: 'mdx' },
+      ],
     },
   ],
 };
@@ -38,7 +41,7 @@ CMS.registerWidget(
       ),
     },
     scope: {
-      Layout: props => (
+      Layout: (props) => (
         <div
           style={{ padding: '10px', border: '1px solid green', borderRadius: '5px' }}
           {...props}

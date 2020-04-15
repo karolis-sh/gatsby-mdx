@@ -26,14 +26,14 @@ import Layout from '../ui/Layout';
 
 // Provide custom components for markdown elements
 const components = {
-  h1: props => <h1 style={{ color: 'tomato' }} {...props} />,
+  h1: (props) => <h1 style={{ color: 'tomato' }} {...props} />,
 };
 
 // Provide custom components that will be referenced as JSX
 // in the markdown string
 const scope = {
   ...UI,
-  Demo: props => <h1>This is a demo component</h1>,
+  Demo: (props) => <h1>This is a demo component</h1>,
 };
 
 const mdx = `
@@ -87,7 +87,7 @@ export default Layout
 
 const allowedImports = {
   wherever: {
-    ImportDefault: props => <h1>This is a demo component</h1>,
+    ImportDefault: (props) => <h1>This is a demo component</h1>,
   },
   '../ui/Layout': {
     ImportDefault: Layout,
@@ -102,7 +102,7 @@ export default () => (
     components={components}
     scope={scope}
     allowedImports={allowedImports}
-    onError={error => console.log(error)}
+    onError={(error) => console.log(error)}
   >
     {mdx}
   </MDX>

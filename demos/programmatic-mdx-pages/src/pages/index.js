@@ -24,8 +24,8 @@ const IndexPage = () => (
         <ul>
           {allSitePage.edges
             .map(({ node }) => node.path)
-            .filter(item => !['/dev-404-page/', '/404.html'].includes(item))
-            .map(path => (
+            .filter((item) => !['/dev-404-page/', '/404.html'].includes(item))
+            .map((path) => (
               <li key={path}>
                 <Link to={path}>{path}</Link>
               </li>

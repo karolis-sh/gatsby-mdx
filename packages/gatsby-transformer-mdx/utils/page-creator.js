@@ -37,7 +37,7 @@ class PageCreator {
   remove(filePath) {
     // Based on - https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-plugin-page-creator/src/gatsby-node.js#L69
     const componentPath = path.join(this.pagesDirectory, filePath);
-    this.store.getState().pages.forEach(page => {
+    this.store.getState().pages.forEach((page) => {
       if (page.component === componentPath) {
         this.deletePage({
           path: createPath(filePath),

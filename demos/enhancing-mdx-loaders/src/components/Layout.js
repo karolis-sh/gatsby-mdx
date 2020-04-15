@@ -18,8 +18,8 @@ function Layout({ children, pageContext: { header } }) {
           }
         }
       `}
-      render={data => (
-        <React.Fragment>
+      render={(data) => (
+        <>
           <Helmet title={data.site.siteMetadata.title}>
             <html lang="en" />
           </Helmet>
@@ -34,7 +34,7 @@ function Layout({ children, pageContext: { header } }) {
           >
             {children}
           </div>
-        </React.Fragment>
+        </>
       )}
     />
   );

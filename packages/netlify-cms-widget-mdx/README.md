@@ -43,7 +43,7 @@ CMS.registerWidget(
       ),
     },
     scope: {
-      Layout: props => (
+      Layout: (props) => (
         <div
           style={{ padding: '10px', border: '1px solid green', borderRadius: '5px' }}
           {...props}

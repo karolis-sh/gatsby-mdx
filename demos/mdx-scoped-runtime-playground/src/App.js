@@ -34,7 +34,7 @@ export default class App extends React.Component {
         <textarea
           style={{ width: '100%', height: 130 }}
           value={mdx}
-          onChange={e => this.setState({ mdx: e.target.value })}
+          onChange={(e) => this.setState({ mdx: e.target.value })}
         />
         <MDX
           components={components}

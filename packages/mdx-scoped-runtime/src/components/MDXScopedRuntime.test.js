@@ -6,9 +6,9 @@ import OriginalMDX from './MDX';
 
 import MDX from './MDXScopedRuntime';
 
-const format = html => prettier.format(html, { parser: 'html' });
+const format = (html) => prettier.format(html, { parser: 'html' });
 
-const parse = mdx => format(renderToString(mdx));
+const parse = (mdx) => format(renderToString(mdx));
 
 it('should have proper test setup', () => {
   expect(

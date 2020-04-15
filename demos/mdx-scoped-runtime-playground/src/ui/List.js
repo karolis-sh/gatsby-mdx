@@ -6,7 +6,7 @@ function List({ items }) {
     <div style={{ background: 'cyan' }}>
       <p>Lemme print it</p>
       <ul>
-        {items.map(item => (
+        {items.map((item) => (
           <li key={item}>{item}</li>
         ))}
       </ul>
