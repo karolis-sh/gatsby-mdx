@@ -56,7 +56,7 @@
     "@k.sh/eslint-config": "^1.13.0",
     "babel-eslint": "^10.1.0",
     "cz-conventional-changelog": "^3.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^3.1.3",
     "husky": "^4.2.5",
     "lerna": "^3.20.2",
     "lint-staged": "^10.1.3",
