@@ -17,6 +17,7 @@
     "build": "lerna run build --ignore @demos/*",
     "clean": "lerna run clean",
     "clean-yarn": "yarn && lerna clean --yes && yarn && yarn clean",
+    "commit": "npx git-cz",
     "format": "run-p format:*",
     "format:package-json": "sort-package-json package.json packages/*/package.json",
     "format:prettier": "prettier --write '**/*.*'",
