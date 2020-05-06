@@ -132,7 +132,7 @@ module.exports = {
 };
 ```
 
-Checkout the [demo](../../demos/enhancing-mdx-loaders).
+Checkout the [demo](https://github.com/karolis-sh/gatsby-mdx/tree/master/demos/enhancing-mdx-loaders).
 
 ### Define default mdx layout with `defaultLayout`
 
@@ -155,7 +155,7 @@ module.exports = {
 
 You can always override it with `export default` syntax.
 
-Checkout the [demo](../../demos/default-mdx-layout).
+Checkout the [demo](https://github.com/karolis-sh/gatsby-mdx/tree/master/demos/default-mdx-layout).
 
 \* Make sure that the provided default layout module exports the layout component as default.
 
@@ -188,7 +188,7 @@ module.exports = {
 </PinkBox>
 ```
 
-Checkout the [demo](../../demos/default-mdx-imports).
+Checkout the [demo](https://github.com/karolis-sh/gatsby-mdx/tree/master/demos/default-mdx-imports).
 
 ## License
 
