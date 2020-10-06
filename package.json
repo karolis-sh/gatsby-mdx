@@ -25,8 +25,8 @@
     "git:sync-tags": "git tag -d $(git tag) && git fetch --tags",
     "lint": "eslint .",
     "qa": "run-p lint test",
-    "release": "run-s git:sync-tags clean build qa && lerna publish",
-    "release-canary": "yarn release --canary --preid beta",
+    "release": "run-s git:sync-tags clean build qa && lerna publish --no-private",
+    "release-canary": "yarn release --canary --preid beta--no-private",
     "test": "lerna run test --ignore @demos/*"
   },
   "husky": {
