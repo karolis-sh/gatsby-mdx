@@ -6,7 +6,7 @@ module.exports = async ({ node, actions, loadNodeContent, createNodeId }) => {
 
   if (node.internal.type === 'File' && node.ext === '.mdx') {
     const content = await loadNodeContent(node);
-    const { data: frontmatter } = grayMatter(content);
+    const { data: frontmatter, content: body } = grayMatter(content);
 
     const mdxNode = {
       id: createNodeId(`${node.id} -> Mdx`),
@@ -19,6 +19,7 @@ module.exports = async ({ node, actions, loadNodeContent, createNodeId }) => {
         ...frontmatter,
         title: frontmatter.title == null ? '' : frontmatter.title,
       },
+      body,
     };
 
     mdxNode.internal.contentDigest = crypto
