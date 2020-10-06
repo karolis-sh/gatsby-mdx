@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/gatsby-transformer-mdx/compare/gatsby-transformer-mdx@1.1.3...gatsby-transformer-mdx@1.2.0) (2020-10-06)
+
+### Features
+
+- expose mdx body in GraphQL ([45c2533](https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/gatsby-transformer-mdx/commit/45c2533))
+
 ## [1.1.3](https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/gatsby-transformer-mdx/compare/gatsby-transformer-mdx@1.1.2...gatsby-transformer-mdx@1.1.3) (2019-09-17)
 
 **Note:** Version bump only for package gatsby-transformer-mdx
