@@ -21,11 +21,10 @@
     "format": "run-p format:*",
     "format:package-json": "sort-package-json package.json packages/*/package.json",
     "format:prettier": "prettier --write '**/*.*'",
-    "git:sync-branches": "git branch --merged master --no-color | grep -v master | grep -v stable | xargs git branch -d",
-    "git:sync-tags": "git tag -d $(git tag) && git fetch --tags",
     "lint": "eslint .",
+    "purge": "git branch --merged master --no-color | grep -v master | grep -v stable | xargs git branch -d",
     "qa": "run-p lint test",
-    "release": "run-s git:sync-tags clean build qa && lerna publish --no-private",
+    "release": "run-s clean build qa && lerna publish --no-private",
     "release-canary": "yarn release --canary --no-private --preid beta",
     "test": "lerna run test --ignore @demos/*"
   },
