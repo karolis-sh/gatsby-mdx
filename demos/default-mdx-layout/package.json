@@ -6,7 +6,7 @@
 	"scripts": {
 		"build": "gatsby build",
 		"clean": "rimraf .cache public",
-		"develop": "yarn clean && gatsby develop --https",
+		"develop": "yarn clean && gatsby develop",
 		"start": "yarn develop",
 		"try-build": "run-s clean build && serve public"
 	},
