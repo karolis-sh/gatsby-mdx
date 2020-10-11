@@ -1,7 +1,7 @@
 # npm files
 node_modules
 
-# Build products
+# project
 /demos/*/.cache
 /demos/*/public
 /packages/*/lib
