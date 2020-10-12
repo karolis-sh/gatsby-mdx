@@ -157,7 +157,8 @@ You can always override it with `export default` syntax.
 
 Checkout the [demo](https://github.com/karolis-sh/gatsby-mdx/tree/master/demos/default-mdx-layout).
 
-\* Make sure that the provided default layout module exports the layout component as default.
+\* Make sure that the provided default layout module exports the layout component
+as default.
 
 ### Adding components to mdx scope with `defaultImports`
 

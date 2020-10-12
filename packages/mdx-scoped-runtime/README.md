@@ -5,8 +5,8 @@
 [![License: MIT][license-badge]][license]
 [![module formats: cjs][module-formats-badge]][unpkg-bundle]
 
-This is a wrapper around [`mdx-runtime`][mdx-runtime] that strips down the `import ...`
-and `export default Layout` out of the MDX at runtime.
+This is a wrapper around [`mdx-runtime`][mdx-runtime] that strips down the
+`import ...` and `export default Layout` out of the MDX at runtime.
 
 ## Install
 
