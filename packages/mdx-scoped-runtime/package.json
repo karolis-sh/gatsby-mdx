@@ -21,15 +21,6 @@
     "start": "yarn build --watch",
     "test": "jest src"
   },
-  "jest": {
-    "setupFilesAfterEnv": [
-      "<rootDir>/src/__tests__/__setup__.js"
-    ],
-    "snapshotSerializers": [
-      "jest-serializer-html"
-    ],
-    "testRegex": "src/.+\\.test\\.js$"
-  },
   "dependencies": {
     "@babel/parser": "^7.2.3",
     "@mdx-js/mdx": "^0.20.3",
