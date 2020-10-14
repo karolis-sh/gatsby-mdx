@@ -3,11 +3,7 @@ node_modules
 package-lock.json
 *.log*
 
-# Build products
+# project
 /demos/*/.cache
 /demos/*/public
 /packages/*/lib
-
-# other
-.vscode
-*.*~

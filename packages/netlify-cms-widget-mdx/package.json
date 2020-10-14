@@ -19,7 +19,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src --out-dir lib --source-maps",
-    "clean": "rimraf lib",
+    "clean": "rm -rf lib",
     "start": "webpack-dev-server --config webpack.dev.config.js"
   },
   "dependencies": {
@@ -40,7 +40,6 @@
     "react": "^16.8.6",
     "react-trend": "1.2.5",
     "remark-emoji": "^2.0.2",
-    "rimraf": "^2.6.3",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.1",
     "webpack": "^4.28.2",

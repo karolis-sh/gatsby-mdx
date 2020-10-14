@@ -1,14 +1,16 @@
-*.*
+*
+!*/
 !*.js
 !*.json
 !*.md
-
-# Build products
-/demos/*/.cache
-/demos/*/public
-/packages/*/lib
+!*.css
+!*.yml
 
 # npm files
 node_modules
 package.json
-package-lock.json
+
+# project
+/demos/*/.cache
+/demos/*/public
+/packages/*/lib

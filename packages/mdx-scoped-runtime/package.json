@@ -17,18 +17,9 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src --out-dir lib --source-maps --ignore **/*.test.js",
-    "clean": "rimraf lib",
+    "clean": "rm -rf lib",
     "start": "yarn build --watch",
     "test": "jest src"
-  },
-  "jest": {
-    "setupFilesAfterEnv": [
-      "<rootDir>/src/__tests__/__setup__.js"
-    ],
-    "snapshotSerializers": [
-      "jest-serializer-html"
-    ],
-    "testRegex": "src/.+\\.test\\.js$"
   },
   "dependencies": {
     "@babel/parser": "^7.2.3",
@@ -47,16 +38,15 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/standalone": "^7.2.2",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^25.3.0",
+    "babel-jest": "^26.5.2",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
-    "jest": "^25.3.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "jest": "^26.5.3",
     "jest-enzyme": "^7.1.2",
     "jest-serializer-html": "^7.0.0",
     "prettier": "^2.0.4",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "rimraf": "^2.6.3"
+    "react-dom": "^16.8.6"
   },
   "peerDependencies": {
     "react": "^16"
