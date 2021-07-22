@@ -65,5 +65,9 @@
     "prettier": "^2.0.4",
     "pretty-quick": "^2.0.1",
     "sort-package-json": "^1.46.0"
+  },
+  "volta": {
+    "node": "10.24.1",
+    "yarn": "1.22.10"
   }
 }
