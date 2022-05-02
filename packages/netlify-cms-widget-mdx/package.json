@@ -1,6 +1,6 @@
 {
   "name": "netlify-cms-widget-mdx",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "Widget for mdx files in Netlify CMS.",
   "keywords": [
     "mdx",
@@ -37,7 +37,7 @@
     "css-loader": "^2.1.0",
     "html-webpack-plugin": "^3.2.0",
     "netlify-cms": "^2.9.7",
-    "react": "^16.8.6",
+    "react": "^17||^16.8.6",
     "react-trend": "1.2.5",
     "remark-emoji": "^2.0.2",
     "source-map-loader": "^0.2.4",
@@ -48,6 +48,6 @@
   },
   "peerDependencies": {
     "netlify-cms": "^2.9",
-    "react": "^16"
+    "react": "^17||^16"
   }
 }
