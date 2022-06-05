@@ -48,6 +48,6 @@
   },
   "peerDependencies": {
     "netlify-cms": "^2.9",
-    "react": "^16"
+    "react": "*"
   }
 }
