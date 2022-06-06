@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/mdx-scoped-runtime/compare/mdx-scoped-runtime@0.7.5...mdx-scoped-runtime@0.8.0) (2022-06-06)
+
+### Features
+
+- add react 17 support ([7bef9c0](https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/mdx-scoped-runtime/commit/7bef9c0))
+
 ## [0.7.5](https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/mdx-scoped-runtime/compare/mdx-scoped-runtime@0.7.4...mdx-scoped-runtime@0.7.5) (2020-10-06)
 
 **Note:** Version bump only for package mdx-scoped-runtime

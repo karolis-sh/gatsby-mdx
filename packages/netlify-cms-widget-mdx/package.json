@@ -1,6 +1,6 @@
 {
   "name": "netlify-cms-widget-mdx",
-  "version": "0.4.4",
+  "version": "0.5.0",
   "description": "Widget for mdx files in Netlify CMS.",
   "keywords": [
     "mdx",
@@ -23,7 +23,7 @@
     "start": "webpack-dev-server --config webpack.dev.config.js"
   },
   "dependencies": {
-    "mdx-scoped-runtime": "^0.7.5",
+    "mdx-scoped-runtime": "^0.8.0",
     "netlify-cms-ui-default": "^2.6.4",
     "netlify-cms-widget-markdown": "^2.5.1",
     "prop-types": "^15.7.2"

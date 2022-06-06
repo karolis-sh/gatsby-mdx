@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/netlify-cms-widget-mdx/compare/netlify-cms-widget-mdx@0.4.4...netlify-cms-widget-mdx@0.5.0) (2022-06-06)
+
+### Features
+
+- add react 17 support ([7bef9c0](https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/netlify-cms-widget-mdx/commit/7bef9c0))
+
 ## [0.4.4](https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/netlify-cms-widget-mdx/compare/netlify-cms-widget-mdx@0.4.3...netlify-cms-widget-mdx@0.4.4) (2020-10-06)
 
 **Note:** Version bump only for package netlify-cms-widget-mdx
