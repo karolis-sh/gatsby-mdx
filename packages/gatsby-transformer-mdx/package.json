@@ -8,11 +8,11 @@
     "gatsby-transformer",
     "mdx"
   ],
-  "homepage": "https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/gatsby-transformer-mdx#readme",
+  "homepage": "https://github.com/karolis-sh/gatsby-mdx/tree/main/packages/gatsby-transformer-mdx#readme",
   "bugs": {
     "url": "https://github.com/karolis-sh/gatsby-mdx/issues"
   },
-  "repository": "https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/gatsby-transformer-mdx",
+  "repository": "https://github.com/karolis-sh/gatsby-mdx/tree/main/packages/gatsby-transformer-mdx",
   "license": "MIT",
   "author": "Karolis Šarapnickis",
   "main": "index.js",

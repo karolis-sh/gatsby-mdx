@@ -7,11 +7,11 @@
     "mdx-runtime",
     "scope"
   ],
-  "homepage": "https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/mdx-scoped-runtime#readme",
+  "homepage": "https://github.com/karolis-sh/gatsby-mdx/tree/main/packages/mdx-scoped-runtime#readme",
   "bugs": {
     "url": "https://github.com/karolis-sh/gatsby-mdx/issues"
   },
-  "repository": "https://github.com/karolis-sh/gatsby-mdx/tree/master/packages/mdx-scoped-runtime",
+  "repository": "https://github.com/karolis-sh/gatsby-mdx/tree/main/packages/mdx-scoped-runtime",
   "license": "MIT",
   "author": "Karolis Šarapnickis",
   "main": "lib/index.js",
