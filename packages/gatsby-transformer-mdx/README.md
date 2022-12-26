@@ -86,10 +86,17 @@ exports.createPages = async ({ actions, graphql }) => {
 
 ## Options
 
-- [`pagesPath`](#define-mdx-pages-location-with-pagespath)
-- [`loaders`](#altering-the-webpack-mdx-loaders-with-loaders)
-- [`defaultLayout`](#define-default-mdx-layout-with-defaultlayout)
-- [`defaultImports`](#adding-components-to-mdx-scope-with-defaultimports)
+- [gatsby-transformer-mdx](#gatsby-transformer-mdx)
+  - [Install](#install)
+  - [How to use](#how-to-use)
+    - [Default case](#default-case)
+    - [Using MDX to programmatically create pages](#using-mdx-to-programmatically-create-pages)
+  - [Options](#options)
+    - [Define mdx pages location with `pagesPath`](#define-mdx-pages-location-with-pagespath)
+    - [Altering the webpack mdx loaders with `loaders`](#altering-the-webpack-mdx-loaders-with-loaders)
+    - [Define default mdx layout with `defaultLayout`](#define-default-mdx-layout-with-defaultlayout)
+    - [Adding components to mdx scope with `defaultImports`](#adding-components-to-mdx-scope-with-defaultimports)
+  - [License](#license)
 
 ### Define mdx pages location with `pagesPath`
 
@@ -132,7 +139,7 @@ module.exports = {
 };
 ```
 
-Checkout the [demo](https://github.com/karolis-sh/gatsby-mdx/tree/master/demos/enhancing-mdx-loaders).
+Checkout the [demo](https://github.com/karolis-sh/gatsby-mdx/tree/main/demos/enhancing-mdx-loaders).
 
 ### Define default mdx layout with `defaultLayout`
 
@@ -155,7 +162,7 @@ module.exports = {
 
 You can always override it with `export default` syntax.
 
-Checkout the [demo](https://github.com/karolis-sh/gatsby-mdx/tree/master/demos/default-mdx-layout).
+Checkout the [demo](https://github.com/karolis-sh/gatsby-mdx/tree/main/demos/default-mdx-layout).
 
 \* Make sure that the provided default layout module exports the layout component
 as default.
@@ -189,7 +196,7 @@ module.exports = {
 </PinkBox>
 ```
 
-Checkout the [demo](https://github.com/karolis-sh/gatsby-mdx/tree/master/demos/default-mdx-imports).
+Checkout the [demo](https://github.com/karolis-sh/gatsby-mdx/tree/main/demos/default-mdx-imports).
 
 ## License
 
@@ -197,7 +204,7 @@ MIT
 
 [version-badge]: https://badge.fury.io/js/gatsby-transformer-mdx.svg
 [version]: https://www.npmjs.com/package/gatsby-transformer-mdx
-[build-badge]: https://travis-ci.org/karolis-sh/gatsby-mdx.svg?branch=master
+[build-badge]: https://travis-ci.org/karolis-sh/gatsby-mdx.svg?branch=main
 [build]: https://travis-ci.org/karolis-sh/gatsby-mdx
 [license-badge]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license]: https://opensource.org/licenses/MIT
