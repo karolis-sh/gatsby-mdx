@@ -115,7 +115,7 @@ MIT
 
 [version-badge]: https://badge.fury.io/js/mdx-scoped-runtime.svg
 [version]: https://www.npmjs.com/package/mdx-scoped-runtime
-[build-badge]: https://travis-ci.org/karolis-sh/gatsby-mdx.svg?branch=master
+[build-badge]: https://travis-ci.org/karolis-sh/gatsby-mdx.svg?branch=main
 [build]: https://travis-ci.org/karolis-sh/gatsby-mdx
 [license-badge]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license]: https://opensource.org/licenses/MIT

@@ -24,7 +24,7 @@
     "lint": "run-p lint:*",
     "lint:js": "eslint .",
     "lint:md": "markdownlint-cli2 '**/*.md' '!node_modules' '!**/node_modules' '!**/CHANGELOG.md'",
-    "purge": "git branch --merged master --no-color | grep -v master | grep -v stable | xargs git branch -d",
+    "purge": "git branch --merged main --no-color | grep -v main | grep -v stable | xargs git branch -d",
     "qa": "run-p lint test",
     "release": "run-s clean build qa && lerna publish --no-private",
     "release-canary": "yarn release --canary --no-private --preid beta",
